@@ -1,0 +1,138 @@
+import React from 'react';
+import useMetaMask from './store/dapp';
+import connectWalletImage from './images/connect-wallet.png'
+import disconnectWalletImage from './images/disconnect-wallet.png';
+import "./App.css"
+import axios from "axios";
+import { useState } from 'react';
+
+function App() {
+  const { mintMLModel, ConnectWallet, connected, DisconnectWallet, walletAddr, address, modelInfos } = useMetaMask();
+  const [presignedUrl, setPresignedUrl] = useState("");
+  const [key, setKey] = useState("");
+  const [description, setDescription] = useState("");
+  const [file, setFile] = useState();
+  const [isUpload, setIsUpload] = useState(true);
+  const [uploadContent, setUploadContent] = useState("Drop your watermarked Machine Learning Model");
+  function handleChange(event) {
+    setUploadContent(event.target.files[0].name);
+    setFile(event.target.files[0])
+    var config = {
+      method: 'get',
+      url: 'http://localhost:5000/api/v1/get-presigned-url',
+      headers: {}
+    };
+
+    axios(config)
+      .then(function (response) {
+        console.log(JSON.stringify(response.data));
+        setKey(response.data.key)
+        setPresignedUrl(response.data.presigned_url)
+      })
+      .catch(function (error) {
+        console.log(error);
+      });
+
+  }
+
+  function handleUploadFile(event) {
+    event.preventDefault()
+    const formData = new FormData();
+    formData.append('file', file);
+    formData.append('fileName', file.name);
+    setUploadContent("Uploading " + file.name);
+    setIsUpload(true);
+    const config = {
+      headers: {
+        'content-type': 'multipart/form-data',
+      },
+    };
+    console.log(file);
+    if (presignedUrl === "") return;
+    axios.put(presignedUrl, formData, config)
+      .then((response) => {
+
+        setUploadContent("Drop your watermarked Machine Learning Model");
+        alert("Uploaded successfully!");
+        setIsUpload(false)
+      })
+      .catch(error => {
+        // Error
+        if (error.response) {
+          if (error.response.status == "403") {
+            alert("This presiged url was expired already!");
+            return;
+          }
+        } else if (error.request) {
+          alert("Error in uploading!")
+          console.log(error.request);
+        } else {
+          // Something happened in setting up the request that triggered an Error
+          alert("Error in uploading!")
+        }
+        alert("Error in uploading!")
+      })
+
+  }
+  return (
+    <div className="page-container">
+      <div style={{ width: "80%", display: "flex", flexDirection: "column", alignItems: "center" }}>
+        <h2 className='text-center' style={{ fontSize: 40, color: "orange", fontFamily: "fantasy" }}>MACHINE LEARNING NFT MARKETPLACE</h2>
+        <img src={connected ? disconnectWalletImage : connectWalletImage} onClick={!connected ? ConnectWallet : DisconnectWallet} width={300} alt='metamask' />
+        <p>{address}</p>
+        <label htmlFor="upload-file" className='m-10 text-focus-center' style={{ border: "2px solid whitesmoke", borderRadius: 10, borderStyle: "dashed", height: 200, width: 600 }}>
+          <h4 style={{ color: "Background", fontFamily: 'inherit', textAlign: "center" }}>
+            {
+              uploadContent
+            }
+          </h4>
+        </label>
+        <input type="file" id="upload-file" onChange={handleChange} hidden />
+        <button type="button" onClick={handleUploadFile} className="btn btn-dark m-10" style={{ backgroundColor: "#27761a" }}>Upload to Storj</button>
+        <label style={{color: 'white'}}>Description</label>
+        <textarea rows="4" cols="50" value={description} onChange={e => setDescription(e.target.value)} />
+        <button disabled={isUpload} type="button" onClick={() => mintMLModel(key, description)} className="btn btn-dark m-10" style={{ backgroundColor: "#27761a" }}>Register ML Model to Blockchain</button>
+        <h3 style={{ color: 'orange' }}>Your Machine Learning Model NFTs</h3>
+        <table className="table table-dark" style={{ backgroundColor: "black", width: "100%" }}>
+          <thead>
+            <tr>
+              <th>Token Id</th>
+              <th>Description</th>
+              <th>Key</th>
+              <th>Owner</th>
+              {/* <th>Action</th> */}
+            </tr>
+          </thead>
+          <tbody>
+            {
+              modelInfos.map((m, i) => {
+                return (
+                  <tr key={i}>
+                    <td>#{i + 1}</td>
+                    <td>{m[0]}</td>
+                    <td>{m[1]}</td>
+                    <td>{
+                      m[2].substring(0, 4) +
+                      "..." +
+                      m[2].substring(m[2].length - 6, m[2].length)
+                    }</td>
+                    {/* <td>
+                      <div className="btn-group">
+                        <button type="button" className="btn btn-dark" style={{ backgroundColor: "#27761a" }}>Install</button>
+                        <button type="button" className="btn btn-dark">Uninstall</button>
+                      </div>
+                    </td> */}
+                  </tr>
+                )
+              })
+            }
+
+          </tbody>
+        </table>
+
+      </div>
+    </div>
+  );
+}
+
+export default App;
