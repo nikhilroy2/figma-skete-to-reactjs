@@ -5,8 +5,31 @@ import disconnectWalletImage from './images/disconnect-wallet.png';
 import "./App.css"
 import axios from "axios";
 import { useState } from 'react';
+import { BrowserRouter, Routes, Route } from "react-router-dom";
+
+//  Pages import
+import Page1 from './Pages/Page1/Page1';
 
 function App() {
+
+  return (
+    <div className="App">
+      <BrowserRouter>
+        <Routes>
+          <Route path="/" element={<HomePage></HomePage>}></Route>
+        </Routes>
+        <Routes>
+          <Route path="/page1" element={<Page1></Page1>}></Route>
+        </Routes>
+      </BrowserRouter>
+    </div>
+  );
+}
+
+export default App;
+
+
+function HomePage() {
   const { mintMLModel, ConnectWallet, connected, DisconnectWallet, walletAddr, address, modelInfos } = useMetaMask();
   const [presignedUrl, setPresignedUrl] = useState("");
   const [key, setKey] = useState("");
@@ -74,6 +97,7 @@ function App() {
       })
 
   }
+
   return (
     <div className="page-container">
       <div style={{ width: "80%", display: "flex", flexDirection: "column", alignItems: "center" }}>
@@ -89,7 +113,7 @@ function App() {
         </label>
         <input type="file" id="upload-file" onChange={handleChange} hidden />
         <button type="button" onClick={handleUploadFile} className="btn btn-dark m-10" style={{ backgroundColor: "#27761a" }}>Upload to Storj</button>
-        <label style={{color: 'white'}}>Description</label>
+        <label style={{ color: 'white' }}>Description</label>
         <textarea rows="4" cols="50" value={description} onChange={e => setDescription(e.target.value)} />
         <button disabled={isUpload} type="button" onClick={() => mintMLModel(key, description)} className="btn btn-dark m-10" style={{ backgroundColor: "#27761a" }}>Register ML Model to Blockchain</button>
         <h3 style={{ color: 'orange' }}>Your Machine Learning Model NFTs</h3>
@@ -132,7 +156,5 @@ function App() {
 
       </div>
     </div>
-  );
+  )
 }
-
-export default App;
