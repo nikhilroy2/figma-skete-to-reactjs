@@ -126,7 +126,6 @@ function Page1(props) {
                                     </svg>
                                 </button>
                             </div>
-
                             <div className="description_box">
                                 <p>
                                     All geohackweek instructional material is made available under the <a href="https://creativecommons.org/licenses/by/4.0/">Creative Commons Attribution license</a>. The following is a human-readable summary of (and not a substitute for) the <a href="https://creativecommons.org/licenses/by/4.0/legalcode">full legal text of the CC BY 4.0 license</a>.
@@ -157,8 +156,6 @@ function Page1(props) {
                                             No warranties are given. The license may not give you all of the permissions necessary for your intended use. For example, other rights such as publicity, privacy, or moral rights may limit how you use the material.
                                         </li>
                                     </ul>
-
-
                                     <strong>Software</strong>
                                     <br />
 
@@ -174,7 +171,7 @@ function Page1(props) {
                         <div className="section_aside">
                             <aside>
                                 <div className="invest_card">
-                                    <div className="invest_card_header">
+                                    <div className="invest_card_header" style={{'--header-bg': '#0AA56D'}}>
                                         <img src={require('../../images/logo-frenchfry.png')} alt="img" />
                                     </div>
                                     <div className="invest_card_body">

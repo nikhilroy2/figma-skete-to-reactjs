@@ -153,6 +153,7 @@
             display: flex;
             justify-content: space-between;
             align-items: flex-start;
+
             .section_main {
                 max-width: 513px;
 
@@ -205,29 +206,35 @@
 
             .section_aside {
                 width: 274px;
+
                 .invest_card {
                     background: #343434;
                     border-radius: 4px;
                     overflow: hidden;
                     margin-bottom: 20px;
+
                     .invest_card_header {
                         height: 199px;
-                        background: #0AA56D;
+                        background: var(--header-bg);
                         display: flex;
                         justify-content: center;
                         align-items: center;
                     }
-                    .invest_card_body{
+
+                    .invest_card_body {
                         padding: 13px 24px;
-                        li{
+
+                        li {
                             display: flex;
                             align-items: center;
                             justify-content: space-between;
-                            .list_box:first-of-type{
+
+                            .list_box:first-of-type {
                                 padding-right: 10px;
                             }
-                            .counter_wrapper{
-                                button{
+
+                            .counter_wrapper {
+                                button {
                                     background: transparent;
                                     border: none;
                                     outline: none;
@@ -240,7 +247,8 @@
                                     align-items: center;
                                     border-radius: 100%;
                                 }
-                                .counter_value{
+
+                                .counter_value {
                                     margin: 0px 10px;
                                     display: inline-block;
                                     width: 30px;
@@ -249,10 +257,12 @@
                             }
                         }
                     }
-                    .invest_card_footer{
+
+                    .invest_card_footer {
                         padding: 0 24px;
                         padding-bottom: 15px;
-                        .invest_btn{
+
+                        .invest_btn {
                             background: #fff;
                             border: none;
                             outline: none;
@@ -266,63 +276,78 @@
                         }
                     }
                 }
-                .metric_chart{
+
+                .metric_chart {
                     margin-bottom: 16px;
-                    .metric_chart_header{
+
+                    .metric_chart_header {
                         display: flex;
                         justify-content: space-between;
                         align-items: center;
                         margin-bottom: 22px;
-                        h3{
+
+                        h3 {
                             font-size: 18px;
                             margin: 0;
                         }
-                        small{
+
+                        small {
                             font-size: 10px;
                             font-weight: normal;
                             display: block;
                             text-align: right;
                         }
-                        h4{
+
+                        h4 {
                             font-size: 14px;
                             margin: 0;
                         }
                     }
                 }
-                .project_details{
+
+                .project_details {
                     margin-bottom: 52px;
-                    .project_details_header{
+
+                    .project_details_header {
                         margin-bottom: 25px;
-                        h2{
+
+                        h2 {
                             font-size: 18px;
                         }
                     }
-                    .project_details_body{
-                        *{
+
+                    .project_details_body {
+                        * {
                             font-size: 14px;
                         }
-                        a{
+
+                        a {
                             color: #9075FF;
                         }
-                        td{
+
+                        td {
                             padding-bottom: 10px;
                             white-space: nowrap;
                             font-weight: normal;
-                            &:first-of-type{
+
+                            &:first-of-type {
                                 padding-right: 34px;
                             }
                         }
                     }
                 }
-                .social_action{
-                    h2{
+
+                .social_action {
+                    h2 {
                         font-size: 18px;
                         margin-bottom: 17px;
                     }
-                    ul.social_list{
+
+                    ul.social_list {
                         display: flex;
                         align-items: center;
-                        li:not(:last-child){
+
+                        li:not(:last-child) {
                             margin-right: 11px;
                         }
                     }

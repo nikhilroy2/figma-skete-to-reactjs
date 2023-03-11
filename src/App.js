@@ -9,6 +9,7 @@ import { BrowserRouter, Routes, Route } from "react-router-dom";
 
 //  Pages import
 import Page1 from './Pages/Page1/Page1';
+import Opportunities from './Pages/Opportunities/Opportunities';
 
 function App() {
 
@@ -20,6 +21,9 @@ function App() {
         </Routes>
         <Routes>
           <Route path="/page1" element={<Page1></Page1>}></Route>
+        </Routes>
+        <Routes>
+          <Route path="/opportunities" element={<Opportunities></Opportunities>}></Route>
         </Routes>
       </BrowserRouter>
     </div>

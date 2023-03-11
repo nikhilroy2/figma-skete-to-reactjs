@@ -171,7 +171,7 @@
 }
 #Page1 #section_2 .section_body .section_aside .invest_card .invest_card_header {
   height: 199px;
-  background: #0AA56D;
+  background: var(--header-bg);
   display: flex;
   justify-content: center;
   align-items: center;
