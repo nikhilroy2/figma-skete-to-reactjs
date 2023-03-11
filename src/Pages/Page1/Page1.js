@@ -1,6 +1,8 @@
-import React from 'react';
+import React, { useState } from 'react';
+
 import './Page1.css';
 function Page1(props) {
+    const [tabIndex, setTabIndex] = useState(1);
     return (
         <div id='Page1'>
             <div className="page_container">
@@ -96,13 +98,80 @@ function Page1(props) {
                                         </svg>
 
 
-                                        SHARE</button>
+                                        <span>SHARE</span></button>
                                 </li>
                                 <li>
-                                    <span>Fixed</span>
+                                    <span className='fixed'>Fixed</span>
                                     <h2>0.0012000 $TIEX</h2>
                                 </li>
                             </ul>
+                        </div>
+                    </div>
+                </section>
+                <section id="section_2">
+                    <div className="section_tab">
+                        <button onClick={() => setTabIndex(1)} className={`btn_tab_section ${tabIndex === 1 ? 'active_btn' : ''}`}>About</button>
+                        <button onClick={() => setTabIndex(2)} className={`btn_tab_section ${tabIndex === 2 ? 'active_btn' : ''}`}>Install and Run</button>
+                    </div>
+
+                    <div className="section_body">
+                        <div className="section_main">
+                            <div className="video_frame_wrapper">
+                                <img className='video_frame' src={require('../../images/video_frame.png')} alt="frame" />
+                                <button className="video_frame_btn">
+                                    <svg width={90} height={90} viewBox="0 0 90 90" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <circle cx={45} cy={45} r={45} fill="#8E0505" />
+                                        <path d="M67.0896 41.7907C70.1249 43.7622 70.125 48.2055 67.0896 50.177L39.2689 68.2471C35.9426 70.4076 31.5454 68.0204 31.5454 64.0539V27.9138C31.5454 23.9473 35.9426 21.5601 39.2689 23.7206L67.0896 41.7907Z" fill="#D9D9D9" />
+                                    </svg>
+                                </button>
+                            </div>
+
+                            <div className="description_box">
+                                <p>
+                                    All geohackweek instructional material is made available under the <a href="https://creativecommons.org/licenses/by/4.0/">Creative Commons Attribution license</a>. The following is a human-readable summary of (and not a substitute for) the <a href="https://creativecommons.org/licenses/by/4.0/legalcode">full legal text of the CC BY 4.0 license</a>.
+                                    You are free:
+                                    <ul>
+                                        <li>to Share—copy and redistribute the material in any medium or format</li>
+                                    </ul>
+                                    <ul>
+                                        <li>to Adapt—remix, transform, and build upon the material</li>
+                                    </ul>
+                                    for any purpose, even commercially.
+                                    The licensor cannot revoke these freedoms as long as you follow the license terms.
+
+                                    <strong>Under the following terms:</strong>
+                                    <ul>
+                                        <li>
+                                        Attribution—You must give appropriate credit (mentioning that your work is derived from work that is Copyright © geohackweek and, where practical, linking to http://geohackweek.github.io/), provide a <a href="https://creativecommons.org/licenses/by/4.0/">link to the license</a>, and indicate if changes were made. You may do so in any reasonable manner, but not in any way that suggests the licensor endorses you or your use.
+                                        </li>
+                                    </ul>
+                                    No additional restrictions—You may not apply legal terms or technological measures that legally restrict others from doing anything the license permits. With the understanding that:
+
+                                    <strong>Notices:</strong>
+                                    <ul>
+                                        <li>
+                                        You do not have to comply with the license for elements of the material in the public domain or where your use is permitted by an applicable exception or limitation.
+                                        </li>
+                                        <li>
+                                        No warranties are given. The license may not give you all of the permissions necessary for your intended use. For example, other rights such as publicity, privacy, or moral rights may limit how you use the material.
+                                        </li>
+                                    </ul>
+                                    
+
+                                    <strong>Software</strong>
+                                    <br />
+
+                                    Except where otherwise noted, the example programs and other software provided by geohackweek are made available under the <a href="https://opensource.org/">OSI</a>-approved <a href="https://opensource.org/license/mit/">MIT license</a>.
+                                    Permission is hereby granted, free of charge, to any person obtaining a copy of this software and associated documentation files (the “Software”), to deal in the Software without restriction, including without limitation the rights to use, copy, modify, merge, publish, distribute, sublicense, and/or sell copies of the Software, and to permit persons to whom the Software is furnished to do so, subject to the following conditions:
+                                    The above copyright notice and this permission notice shall be included in all copies or substantial portions of the Software.
+                                    <br />
+                                    <br />
+                                    THE SOFTWARE IS PROVIDED “AS IS”, WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
+                                </p>
+                            </div>
+                        </div>
+                        <div className="section_aside">
+                            <aside></aside>
                         </div>
                     </div>
                 </section>
