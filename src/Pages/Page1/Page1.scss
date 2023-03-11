@@ -1,3 +1,72 @@
-#Page1{
-    
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap');
+#Page1 {
+    padding-top: 83px;
+    * {
+        color: #ffffff;
+        font-weight: bold;
+        font-family: 'Inter', sans-serif;
+    }
+    ul,ol{
+        list-style: none;
+        margin: 0;
+        padding: 0;
+    }
+
+    .page_container {
+        max-width: 950px;
+        margin: auto;
+
+        .flex_row {
+            display: flex;
+            justify-content: space-between;
+
+            .flex_item_left {
+                display: flex;
+                .item_box{
+                    padding-left: 24px;
+                }
+                .provider_box{
+                    display: flex;
+                    align-items: center;
+                    margin-bottom: 13px;
+                    .provider_info{
+                        display: flex;
+                        flex-direction: column;
+                        padding-left: 7px;
+                    }
+                }
+                .rating_box{
+                    h2{
+                        margin-bottom: 0;
+                    }
+                    .rating_wrapper{
+                        margin-top: 3px;
+                        .rating_span{
+                            margin-right: 4px;
+                            vertical-align: baseline;
+                            svg{
+                                width: 15px;
+                                height: 15px;
+                            }
+                            &:last-child{
+                                margin-right: 0px;
+                                display: inline-block;
+                                transform: translateY(3px);
+                            }
+                        }
+                    }
+                }
+            }
+            .flex_item_right{
+                text-align: right;
+                .share_btn{
+                    background: #C73C3C;
+                    border: none;
+                    outline: none;
+                    color: #fff;
+                    
+                }
+            }
+        }
+    }
 }

@@ -1,1 +1,66 @@
-/*# sourceMappingURL=Page1.css.map */
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap");
+#Page1 {
+  padding-top: 83px;
+}
+#Page1 * {
+  color: #ffffff;
+  font-weight: bold;
+  font-family: "Inter", sans-serif;
+}
+#Page1 ul, #Page1 ol {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+#Page1 .page_container {
+  max-width: 950px;
+  margin: auto;
+}
+#Page1 .page_container .flex_row {
+  display: flex;
+  justify-content: space-between;
+}
+#Page1 .page_container .flex_row .flex_item_left {
+  display: flex;
+}
+#Page1 .page_container .flex_row .flex_item_left .item_box {
+  padding-left: 24px;
+}
+#Page1 .page_container .flex_row .flex_item_left .provider_box {
+  display: flex;
+  align-items: center;
+  margin-bottom: 13px;
+}
+#Page1 .page_container .flex_row .flex_item_left .provider_box .provider_info {
+  display: flex;
+  flex-direction: column;
+  padding-left: 7px;
+}
+#Page1 .page_container .flex_row .flex_item_left .rating_box h2 {
+  margin-bottom: 0;
+}
+#Page1 .page_container .flex_row .flex_item_left .rating_box .rating_wrapper {
+  margin-top: 3px;
+}
+#Page1 .page_container .flex_row .flex_item_left .rating_box .rating_wrapper .rating_span {
+  margin-right: 4px;
+  vertical-align: baseline;
+}
+#Page1 .page_container .flex_row .flex_item_left .rating_box .rating_wrapper .rating_span svg {
+  width: 15px;
+  height: 15px;
+}
+#Page1 .page_container .flex_row .flex_item_left .rating_box .rating_wrapper .rating_span:last-child {
+  margin-right: 0px;
+  display: inline-block;
+  transform: translateY(3px);
+}
+#Page1 .page_container .flex_row .flex_item_right {
+  text-align: right;
+}
+#Page1 .page_container .flex_row .flex_item_right .share_btn {
+  background: #C73C3C;
+  border: none;
+  outline: none;
+  color: #fff;
+}/*# sourceMappingURL=Page1.css.map */
