@@ -3,6 +3,7 @@ import React, { useState } from 'react';
 import './Page1.css';
 function Page1(props) {
     const [tabIndex, setTabIndex] = useState(1);
+    const [investCounter, setInvestCounter] = useState(134)
     return (
         <div id='Page1'>
             <div className="page_container">
@@ -142,7 +143,7 @@ function Page1(props) {
                                     <strong>Under the following terms:</strong>
                                     <ul>
                                         <li>
-                                        Attribution—You must give appropriate credit (mentioning that your work is derived from work that is Copyright © geohackweek and, where practical, linking to http://geohackweek.github.io/), provide a <a href="https://creativecommons.org/licenses/by/4.0/">link to the license</a>, and indicate if changes were made. You may do so in any reasonable manner, but not in any way that suggests the licensor endorses you or your use.
+                                            Attribution—You must give appropriate credit (mentioning that your work is derived from work that is Copyright © geohackweek and, where practical, linking to http://geohackweek.github.io/), provide a <a href="https://creativecommons.org/licenses/by/4.0/">link to the license</a>, and indicate if changes were made. You may do so in any reasonable manner, but not in any way that suggests the licensor endorses you or your use.
                                         </li>
                                     </ul>
                                     No additional restrictions—You may not apply legal terms or technological measures that legally restrict others from doing anything the license permits. With the understanding that:
@@ -150,18 +151,18 @@ function Page1(props) {
                                     <strong>Notices:</strong>
                                     <ul>
                                         <li>
-                                        You do not have to comply with the license for elements of the material in the public domain or where your use is permitted by an applicable exception or limitation.
+                                            You do not have to comply with the license for elements of the material in the public domain or where your use is permitted by an applicable exception or limitation.
                                         </li>
                                         <li>
-                                        No warranties are given. The license may not give you all of the permissions necessary for your intended use. For example, other rights such as publicity, privacy, or moral rights may limit how you use the material.
+                                            No warranties are given. The license may not give you all of the permissions necessary for your intended use. For example, other rights such as publicity, privacy, or moral rights may limit how you use the material.
                                         </li>
                                     </ul>
-                                    
+
 
                                     <strong>Software</strong>
                                     <br />
 
-                                    Except where otherwise noted, the example programs and other software provided by geohackweek are made available under the <a href="https://opensource.org/">OSI</a>-approved <a href="https://opensource.org/license/mit/">MIT license</a>.
+                                    Except where otherwise noted, the example programs and other software provided by geohackweek are made available under the <a href="https://opensource.org/">OSI</a>-approved <a href="https://opensource.org/license/mit/">MIT license</a>. <br />
                                     Permission is hereby granted, free of charge, to any person obtaining a copy of this software and associated documentation files (the “Software”), to deal in the Software without restriction, including without limitation the rights to use, copy, modify, merge, publish, distribute, sublicense, and/or sell copies of the Software, and to permit persons to whom the Software is furnished to do so, subject to the following conditions:
                                     The above copyright notice and this permission notice shall be included in all copies or substantial portions of the Software.
                                     <br />
@@ -171,7 +172,188 @@ function Page1(props) {
                             </div>
                         </div>
                         <div className="section_aside">
-                            <aside></aside>
+                            <aside>
+                                <div className="invest_card">
+                                    <div className="invest_card_header">
+                                        <img src={require('../../images/logo-frenchfry.png')} alt="img" />
+                                    </div>
+                                    <div className="invest_card_body">
+                                        <ul>
+                                            <li>
+                                                <div className="list_box">
+                                                    <h2 style={{ fontSize: '13px' }}>FRENCHFRY (Subway)</h2>
+                                                </div>
+                                                <div className="list_box" style={{ whiteSpace: 'nowrap' }}>
+                                                    {investCounter} / 888
+                                                </div>
+                                            </li>
+                                            <li>
+                                                <div className="list_box">
+                                                    <h2 style={{ fontSize: '19px' }}>
+                                                        5.2 TIEX
+                                                    </h2>
+                                                </div>
+                                                <div className="list_box">
+                                                    <div className="counter_wrapper">
+                                                        <button className="counter_plus" onClick={() => setInvestCounter(investCounter + 1)}>
+                                                            <svg width={8} height={8} viewBox="0 0 8 8" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                                <path d="M8 4H0" stroke="white" strokeWidth={2} />
+                                                                <path d="M4 8L4 0" stroke="white" strokeWidth={2} />
+                                                            </svg>
+
+                                                        </button>
+                                                        <span className="counter_value">{investCounter}</span>
+                                                        <button className="counter_minus" onClick={() => setInvestCounter(investCounter - 1)}>
+                                                            <svg width={8} height={8} viewBox="0 0 8 8" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                                <path d="M8 4H0" stroke="white" strokeWidth={2} />
+                                                                {/* <path d="M4 8L4 0" stroke="white" strokeWidth={2} /> */}
+                                                            </svg>
+                                                        </button>
+                                                    </div>
+                                                </div>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                    <div className="invest_card_footer">
+                                        <button className="invest_btn">
+                                            Invest
+                                        </button>
+                                    </div>
+                                </div>
+
+                                <div className="metric_chart">
+                                    <div className="metric_chart_header">
+                                        <h3>Metric</h3>
+                                        <div className="box">
+                                            <small>Revenue</small>
+                                            <h4>$232.00m</h4>
+                                        </div>
+                                    </div>
+                                    <div className="metric_chart_body">
+                                        <img src={require('../../images/metric_map.png')} alt="img" />
+                                    </div>
+                                </div>
+                                <div className="project_details">
+                                    <div className="project_details_header">
+                                        <h2>Project Details</h2>
+                                    </div>
+                                    <div className="project_details_body">
+                                        <table>
+                                            <tr>
+                                                <td>
+                                                    Project URL
+                                                </td>
+                                                <td>
+                                                    <a href="#">https://shortesttrack- ...</a>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td>
+                                                    Organization
+                                                </td>
+                                                <td>
+                                                    The Intelligence Exchange
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td>Service</td>
+                                                <td>
+                                                    Time Series Forecasting
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td>Contributors</td>
+                                                <td>
+                                                    Artur Gontigo
+                                                </td>
+                                            </tr>
+                                        </table>
+                                    </div>
+                                    <div className="project_details_footer">
+
+                                    </div>
+                                </div>
+                                <div className="social_action">
+                                    <h2>
+                                        Social Links
+                                    </h2>
+                                    <ul className='social_list'>
+                                        <li>
+                                            <a href="#">
+                                                <svg width={21} height={21} viewBox="0 0 21 21" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                    <path d="M10.5 19.25C15.3325 19.25 19.25 15.3325 19.25 10.5C19.25 5.66751 15.3325 1.75 10.5 1.75C5.66751 1.75 1.75 5.66751 1.75 10.5C1.75 15.3325 5.66751 19.25 10.5 19.25Z" stroke="white" strokeLinecap="round" strokeLinejoin="round" />
+                                                    <path d="M1.75 10.5H19.25" stroke="white" strokeLinecap="round" strokeLinejoin="round" />
+                                                    <path d="M10.5 1.75C12.6886 4.14606 13.9324 7.25553 14 10.5C13.9324 13.7445 12.6886 16.8539 10.5 19.25C8.31138 16.8539 7.06759 13.7445 7 10.5C7.06759 7.25553 8.31138 4.14606 10.5 1.75Z" stroke="white" strokeLinecap="round" strokeLinejoin="round" />
+                                                </svg>
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="#">
+                                                <svg width={19} height={19} viewBox="0 0 19 19" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                    <path d="M18.2083 2.37503C17.4502 2.90978 16.6108 3.31878 15.7225 3.58628C15.2457 3.03806 14.612 2.64949 13.9072 2.47313C13.2024 2.29678 12.4604 2.34114 11.7816 2.60022C11.1028 2.8593 10.52 3.32059 10.1119 3.92172C9.70383 4.52284 9.49022 5.23479 9.49996 5.96128V6.75294C8.10871 6.78902 6.73013 6.48046 5.48701 5.85475C4.24388 5.22905 3.17479 4.30561 2.37496 3.16669C2.37496 3.16669 -0.791707 10.2917 6.33329 13.4584C4.70288 14.5651 2.76063 15.12 0.791626 15.0417C7.91663 19 16.625 15.0417 16.625 5.93753C16.6242 5.71701 16.603 5.49704 16.5616 5.28044C17.3696 4.48363 17.9398 3.47759 18.2083 2.37503Z" stroke="white" strokeLinecap="round" strokeLinejoin="round" />
+                                                </svg>
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="#">
+                                                <svg width={24} height={24} viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                    <g clipPath="url(#clip0_9_180)">
+                                                        <path d="M13 19.938C15.0173 19.6813 16.8611 18.6661 18.1568 17.0988C19.4525 15.5314 20.1027 13.5295 19.9754 11.5C19.848 9.47041 18.9527 7.56549 17.4713 6.17238C15.9898 4.77927 14.0336 4.00252 12 4C9.96396 3.99848 8.00395 4.77334 6.51934 6.16668C5.03473 7.56002 4.13724 9.46699 4.00974 11.499C3.88225 13.5311 4.53434 15.5353 5.83314 17.1033C7.13195 18.6712 8.97974 19.685 11 19.938V14H9V12H11V10.346C11 9.009 11.14 8.524 11.4 8.035C11.6561 7.55119 12.052 7.15569 12.536 6.9C12.918 6.695 13.393 6.572 14.223 6.519C14.552 6.498 14.978 6.524 15.501 6.599V8.499H15C14.083 8.499 13.704 8.542 13.478 8.663C13.3431 8.73236 13.2334 8.84215 13.164 8.977C13.044 9.203 13 9.427 13 10.345V12H15.5L15 14H13V19.938ZM12 22C6.477 22 2 17.523 2 12C2 6.477 6.477 2 12 2C17.523 2 22 6.477 22 12C22 17.523 17.523 22 12 22Z" fill="white" />
+                                                    </g>
+                                                    <defs>
+                                                        <clipPath id="clip0_9_180">
+                                                            <rect width={24} height={24} fill="white" />
+                                                        </clipPath>
+                                                    </defs>
+                                                </svg>
+
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="#">
+                                                <svg width={22} height={22} viewBox="0 0 22 22" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                    <path d="M20.5692 4.23671L17.6645 17.9351C17.4453 18.9019 16.8739 19.1426 16.0617 18.6871L11.636 15.4258L9.50042 17.4797C9.26409 17.716 9.06644 17.9137 8.61097 17.9137L8.92894 13.4062L17.1317 5.99413C17.4883 5.67616 17.0543 5.49999 16.5774 5.81796L6.43675 12.2031L2.07112 10.8367C1.12152 10.5402 1.10433 9.8871 2.26878 9.43163L19.3446 2.85311C20.1352 2.55663 20.827 3.02929 20.5692 4.23671Z" fill="white" />
+                                                </svg>
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="#">
+                                                <svg width={17} height={17} viewBox="0 0 17 17" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                    <path d="M6.37496 13.4583C2.83329 14.5208 2.83329 11.6875 1.41663 11.3333M11.3333 15.5833V12.8421C11.3599 12.5043 11.3142 12.1648 11.1994 11.846C11.0846 11.5272 10.9033 11.2366 10.6675 10.9933C12.8916 10.7454 15.2291 9.90248 15.2291 6.03498C15.2289 5.04602 14.8485 4.09499 14.1666 3.37873C14.4895 2.5135 14.4667 1.55714 14.1029 0.70831C14.1029 0.70831 13.267 0.460393 11.3333 1.75664C9.7098 1.31664 7.99845 1.31664 6.37496 1.75664C4.44121 0.460393 3.60538 0.70831 3.60538 0.70831C3.24156 1.55714 3.21873 2.5135 3.54163 3.37873C2.85463 4.1003 2.47383 5.05993 2.47913 6.05623C2.47913 9.89539 4.81663 10.7383 7.04079 11.0146C6.80775 11.2554 6.62802 11.5426 6.5133 11.8574C6.39858 12.1723 6.35145 12.5078 6.37496 12.8421V15.5833" stroke="white" strokeLinecap="round" strokeLinejoin="round" />
+                                                </svg>
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="#">
+                                                <svg width={19} height={19} viewBox="0 0 19 19" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                    <path d="M9.49997 5.69442C7.39401 5.69442 5.6944 7.39403 5.6944 9.49999C5.6944 11.6059 7.39401 13.3056 9.49997 13.3056C11.6059 13.3056 13.3055 11.6059 13.3055 9.49999C13.3055 7.39403 11.6059 5.69442 9.49997 5.69442ZM9.49997 11.9733C8.13805 11.9733 7.02663 10.8619 7.02663 9.49999C7.02663 8.13808 8.13805 7.02665 9.49997 7.02665C10.8619 7.02665 11.9733 8.13808 11.9733 9.49999C11.9733 10.8619 10.8619 11.9733 9.49997 11.9733ZM13.4614 4.65165C12.9697 4.65165 12.5726 5.04872 12.5726 5.54042C12.5726 6.03212 12.9697 6.42919 13.4614 6.42919C13.9531 6.42919 14.3502 6.03397 14.3502 5.54042C14.3503 5.42366 14.3274 5.30803 14.2828 5.20013C14.2382 5.09223 14.1727 4.9942 14.0902 4.91164C14.0076 4.82908 13.9096 4.76362 13.8017 4.71901C13.6938 4.67439 13.5781 4.6515 13.4614 4.65165ZM16.9181 9.49999C16.9181 8.47577 16.9274 7.46083 16.8699 6.43847C16.8124 5.25097 16.5415 4.19706 15.6731 3.3287C14.8029 2.45849 13.7508 2.18944 12.5633 2.13192C11.5391 2.0744 10.5242 2.08368 9.50182 2.08368C8.4776 2.08368 7.46266 2.0744 6.4403 2.13192C5.2528 2.18944 4.19889 2.46034 3.33053 3.3287C2.46032 4.19892 2.19127 5.25097 2.13375 6.43847C2.07624 7.46269 2.08551 8.47763 2.08551 9.49999C2.08551 10.5224 2.07624 11.5392 2.13375 12.5615C2.19127 13.749 2.46217 14.8029 3.33053 15.6713C4.20075 16.5415 5.2528 16.8105 6.4403 16.8681C7.46452 16.9256 8.47946 16.9163 9.50182 16.9163C10.526 16.9163 11.541 16.9256 12.5633 16.8681C13.7508 16.8105 14.8048 16.5396 15.6731 15.6713C16.5433 14.8011 16.8124 13.749 16.8699 12.5615C16.9293 11.5392 16.9181 10.5242 16.9181 9.49999ZM15.2853 13.8752C15.1499 14.2129 14.9866 14.4652 14.725 14.725C14.4633 14.9866 14.2129 15.1499 13.8752 15.2853C12.8992 15.6731 10.5817 15.5859 9.49997 15.5859C8.41823 15.5859 6.09889 15.6731 5.12292 15.2872C4.78522 15.1517 4.53288 14.9885 4.27311 14.7268C4.01149 14.4652 3.84821 14.2147 3.71276 13.877C3.32682 12.8992 3.41403 10.5817 3.41403 9.49999C3.41403 8.41825 3.32682 6.09892 3.71276 5.12294C3.84821 4.78524 4.01149 4.5329 4.27311 4.27313C4.53473 4.01337 4.78522 3.84823 5.12292 3.71278C6.09889 3.32685 8.41823 3.41405 9.49997 3.41405C10.5817 3.41405 12.901 3.32685 13.877 3.71278C14.2147 3.84823 14.4671 4.01151 14.7268 4.27313C14.9884 4.53476 15.1517 4.78524 15.2872 5.12294C15.6731 6.09892 15.5859 8.41825 15.5859 9.49999C15.5859 10.5817 15.6731 12.8992 15.2853 13.8752Z" fill="white" />
+                                                </svg>
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="#">
+                                                <svg width={15} height={15} viewBox="0 0 15 15" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                    <g clipPath="url(#clip0_9_190)">
+                                                        <path d="M9.645 7.125C9.645 7.5825 9.3075 7.9575 8.88 7.9575C8.46 7.9575 8.115 7.5825 8.115 7.125C8.115 6.6675 8.4525 6.2925 8.88 6.2925C9.3075 6.2925 9.645 6.6675 9.645 7.125ZM6.1425 6.2925C5.715 6.2925 5.3775 6.6675 5.3775 7.125C5.3775 7.5825 5.7225 7.9575 6.1425 7.9575C6.57 7.9575 6.9075 7.5825 6.9075 7.125C6.915 6.6675 6.57 6.2925 6.1425 6.2925ZM14.0625 1.545V15C12.173 13.3303 12.7773 13.883 10.5825 11.8425L10.98 13.23H2.475C1.6275 13.23 0.9375 12.54 0.9375 11.685V1.545C0.9375 0.69 1.6275 0 2.475 0H12.525C13.3725 0 14.0625 0.69 14.0625 1.545ZM11.925 8.655C11.925 6.24 10.845 4.2825 10.845 4.2825C9.765 3.4725 8.7375 3.495 8.7375 3.495L8.6325 3.615C9.9075 4.005 10.5 4.5675 10.5 4.5675C8.71843 3.59106 6.62566 3.59089 4.8975 4.35C4.62 4.4775 4.455 4.5675 4.455 4.5675C4.455 4.5675 5.0775 3.975 6.4275 3.585L6.3525 3.495C6.3525 3.495 5.325 3.4725 4.245 4.2825C4.245 4.2825 3.165 6.24 3.165 8.655C3.165 8.655 3.795 9.7425 5.4525 9.795C5.4525 9.795 5.73 9.4575 5.955 9.1725C5.0025 8.8875 4.6425 8.2875 4.6425 8.2875C4.75283 8.36473 4.93477 8.46483 4.95 8.475C6.21592 9.18393 8.0141 9.41619 9.63 8.7375C9.8925 8.64 10.185 8.4975 10.4925 8.295C10.4925 8.295 10.1175 8.91 9.135 9.1875C9.36 9.4725 9.63 9.795 9.63 9.795C11.2875 9.7425 11.925 8.655 11.925 8.655Z" fill="white" />
+                                                    </g>
+                                                    <defs>
+                                                        <clipPath id="clip0_9_190">
+                                                            <rect width={15} height={15} fill="white" />
+                                                        </clipPath>
+                                                    </defs>
+                                                </svg>
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="#">
+                                                <svg width={18} height={18} viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                    <path d="M5.0625 9.98438C5.0625 10.2454 5.16621 10.4958 5.35082 10.6804C5.53542 10.865 5.7858 10.9688 6.04688 10.9688C6.30795 10.9688 6.55833 10.865 6.74293 10.6804C6.92754 10.4958 7.03125 10.2454 7.03125 9.98438C7.03125 9.7233 6.92754 9.47292 6.74293 9.28832C6.55833 9.10371 6.30795 9 6.04688 9C5.7858 9 5.53542 9.10371 5.35082 9.28832C5.16621 9.47292 5.0625 9.7233 5.0625 9.98438ZM11.0162 12.0885C10.6102 12.4084 9.80508 12.7529 9 12.7529C8.19492 12.7529 7.38984 12.4084 6.98379 12.0885C6.73066 11.8898 6.36328 11.932 6.16289 12.1852C5.9625 12.4383 6.00645 12.8057 6.25957 13.0061C6.96621 13.5633 8.04199 13.9219 9 13.9219C9.95801 13.9219 11.0338 13.5633 11.7404 13.0061C11.8621 12.91 11.9407 12.7696 11.9588 12.6156C11.9769 12.4617 11.9331 12.3068 11.8371 12.1852C11.7411 12.0635 11.6006 11.9849 11.4467 11.9668C11.2927 11.9487 11.1379 11.9924 11.0162 12.0885ZM16.875 8.01562C16.875 6.92754 15.9943 6.04688 14.9062 6.04688C14.1662 6.04688 13.5229 6.45469 13.1854 7.05938C12.1729 6.50566 10.9406 6.14883 9.59766 6.06621L10.7736 3.42773L13.0219 4.07637C13.224 4.64941 13.7707 5.0625 14.4141 5.0625C15.2297 5.0625 15.8906 4.40156 15.8906 3.58594C15.8906 2.77031 15.2297 2.10938 14.4141 2.10938C13.8516 2.10938 13.3629 2.42402 13.1133 2.88633L10.6084 2.16211C10.4729 2.12274 10.3277 2.13382 10.1997 2.19329C10.0717 2.25275 9.96961 2.35658 9.9123 2.48555L8.31621 6.06973C7.00664 6.16113 5.8043 6.51621 4.81465 7.05762C4.64399 6.751 4.39444 6.4956 4.09185 6.31788C3.78927 6.14016 3.44466 6.04659 3.09375 6.04688C2.00566 6.04688 1.125 6.92754 1.125 8.01562C1.125 8.8207 1.6084 9.51152 2.29922 9.81738C2.17441 10.1865 2.10938 10.5732 2.10938 10.9688C2.10938 13.6863 5.19434 15.8906 9 15.8906C12.8057 15.8906 15.8906 13.6863 15.8906 10.9688C15.8906 10.5715 15.8238 10.1865 15.7008 9.81738C16.3916 9.51152 16.875 8.8207 16.875 8.01562ZM14.4141 3.03223C14.4868 3.03223 14.5588 3.04655 14.626 3.07438C14.6931 3.1022 14.7542 3.14299 14.8056 3.1944C14.857 3.24582 14.8978 3.30686 14.9256 3.37404C14.9535 3.44122 14.9678 3.51322 14.9678 3.58594C14.9678 3.65865 14.9535 3.73065 14.9256 3.79783C14.8978 3.86501 14.857 3.92605 14.8056 3.97747C14.7542 4.02889 14.6931 4.06967 14.626 4.0975C14.5588 4.12533 14.4868 4.13965 14.4141 4.13965C14.2672 4.13965 14.1264 4.08131 14.0225 3.97747C13.9187 3.87363 13.8604 3.73279 13.8604 3.58594C13.8604 3.43908 13.9187 3.29825 14.0225 3.1944C14.1264 3.09056 14.2672 3.03223 14.4141 3.03223ZM2.10938 8.01562C2.10938 7.47246 2.55059 7.03125 3.09375 7.03125C3.28023 7.0314 3.46283 7.08451 3.6203 7.1844C3.77776 7.2843 3.90362 7.42686 3.9832 7.59551C3.46816 7.98574 3.04277 8.43574 2.72637 8.92969C2.54434 8.85588 2.38843 8.72951 2.27854 8.5667C2.16865 8.4039 2.10976 8.21205 2.10938 8.01562ZM9 14.7217C5.83945 14.7217 3.27832 13.0412 3.27832 10.9688C3.27832 8.89629 5.83945 7.21582 9 7.21582C12.1605 7.21582 14.7217 8.89629 14.7217 10.9688C14.7217 13.0412 12.1605 14.7217 9 14.7217ZM15.2719 8.92969C14.9572 8.43574 14.5301 7.98574 14.015 7.59551C14.1732 7.26328 14.5125 7.03125 14.9045 7.03125C15.4477 7.03125 15.8889 7.47246 15.8889 8.01562C15.8906 8.42871 15.634 8.78379 15.2719 8.92969ZM10.9688 9.98438C10.9688 10.2454 11.0725 10.4958 11.2571 10.6804C11.4417 10.865 11.6921 10.9688 11.9531 10.9688C12.2142 10.9688 12.4646 10.865 12.6492 10.6804C12.8338 10.4958 12.9375 10.2454 12.9375 9.98438C12.9375 9.7233 12.8338 9.47292 12.6492 9.28832C12.4646 9.10371 12.2142 9 11.9531 9C11.6921 9 11.4417 9.10371 11.2571 9.28832C11.0725 9.47292 10.9688 9.7233 10.9688 9.98438Z" fill="white" />
+                                                </svg>
+                                            </a>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </aside>
                         </div>
                     </div>
                 </section>

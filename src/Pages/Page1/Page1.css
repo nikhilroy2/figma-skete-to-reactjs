@@ -116,6 +116,11 @@
   height: 3px;
   background: #909090;
 }
+#Page1 #section_2 .section_body {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+}
 #Page1 #section_2 .section_body .section_main {
   max-width: 513px;
 }
@@ -154,4 +159,122 @@
   display: block;
   font-weight: bold;
   margin-top: 15px;
+}
+#Page1 #section_2 .section_body .section_aside {
+  width: 274px;
+}
+#Page1 #section_2 .section_body .section_aside .invest_card {
+  background: #343434;
+  border-radius: 4px;
+  overflow: hidden;
+  margin-bottom: 20px;
+}
+#Page1 #section_2 .section_body .section_aside .invest_card .invest_card_header {
+  height: 199px;
+  background: #0AA56D;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+#Page1 #section_2 .section_body .section_aside .invest_card .invest_card_body {
+  padding: 13px 24px;
+}
+#Page1 #section_2 .section_body .section_aside .invest_card .invest_card_body li {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+#Page1 #section_2 .section_body .section_aside .invest_card .invest_card_body li .list_box:first-of-type {
+  padding-right: 10px;
+}
+#Page1 #section_2 .section_body .section_aside .invest_card .invest_card_body li .counter_wrapper button {
+  background: transparent;
+  border: none;
+  outline: none;
+  width: 24.33px;
+  height: 24.33px;
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 100%;
+}
+#Page1 #section_2 .section_body .section_aside .invest_card .invest_card_body li .counter_wrapper .counter_value {
+  margin: 0px 10px;
+  display: inline-block;
+  width: 30px;
+  text-align: center;
+}
+#Page1 #section_2 .section_body .section_aside .invest_card .invest_card_footer {
+  padding: 0 24px;
+  padding-bottom: 15px;
+}
+#Page1 #section_2 .section_body .section_aside .invest_card .invest_card_footer .invest_btn {
+  background: #fff;
+  border: none;
+  outline: none;
+  font-size: 15px;
+  color: #000;
+  text-align: center;
+  display: block;
+  width: 100%;
+  border-radius: 52px;
+  padding: 5px;
+}
+#Page1 #section_2 .section_body .section_aside .metric_chart {
+  margin-bottom: 16px;
+}
+#Page1 #section_2 .section_body .section_aside .metric_chart .metric_chart_header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 22px;
+}
+#Page1 #section_2 .section_body .section_aside .metric_chart .metric_chart_header h3 {
+  font-size: 18px;
+  margin: 0;
+}
+#Page1 #section_2 .section_body .section_aside .metric_chart .metric_chart_header small {
+  font-size: 10px;
+  font-weight: normal;
+  display: block;
+  text-align: right;
+}
+#Page1 #section_2 .section_body .section_aside .metric_chart .metric_chart_header h4 {
+  font-size: 14px;
+  margin: 0;
+}
+#Page1 #section_2 .section_body .section_aside .project_details {
+  margin-bottom: 52px;
+}
+#Page1 #section_2 .section_body .section_aside .project_details .project_details_header {
+  margin-bottom: 25px;
+}
+#Page1 #section_2 .section_body .section_aside .project_details .project_details_header h2 {
+  font-size: 18px;
+}
+#Page1 #section_2 .section_body .section_aside .project_details .project_details_body * {
+  font-size: 14px;
+}
+#Page1 #section_2 .section_body .section_aside .project_details .project_details_body a {
+  color: #9075FF;
+}
+#Page1 #section_2 .section_body .section_aside .project_details .project_details_body td {
+  padding-bottom: 10px;
+  white-space: nowrap;
+  font-weight: normal;
+}
+#Page1 #section_2 .section_body .section_aside .project_details .project_details_body td:first-of-type {
+  padding-right: 34px;
+}
+#Page1 #section_2 .section_body .section_aside .social_action h2 {
+  font-size: 18px;
+  margin-bottom: 17px;
+}
+#Page1 #section_2 .section_body .section_aside .social_action ul.social_list {
+  display: flex;
+  align-items: center;
+}
+#Page1 #section_2 .section_body .section_aside .social_action ul.social_list li:not(:last-child) {
+  margin-right: 11px;
 }/*# sourceMappingURL=Page1.css.map */
