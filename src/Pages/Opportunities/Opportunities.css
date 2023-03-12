@@ -6,6 +6,11 @@
 #Opportunities .page_container * {
   color: #fff;
 }
+#Opportunities .page_container ul,
+#Opportunities .page_container ol {
+  margin: 0;
+  padding: 0;
+}
 #Opportunities .page_container .page_header {
   margin-bottom: 72px;
 }
@@ -17,37 +22,57 @@
 }
 #Opportunities .page_container .page_sub_header {
   font-size: 34px;
+  margin-bottom: 58px;
 }
 #Opportunities .page_container .page_sub_header .counter {
   font-size: 27px;
   color: #707070;
 }
-#Opportunities .page_container .invest_card {
+#Opportunities .page_container .card_row {
+  display: flex;
+  flex-flow: row wrap;
+  margin-bottom: 84px;
+}
+@media (max-width: 1290px) {
+  #Opportunities .page_container .card_row {
+    justify-content: space-around;
+  }
+}
+#Opportunities .page_container .card_row .invest_card {
   background: #343434;
   border-radius: 4px;
   overflow: hidden;
-  margin-bottom: 20px;
+  margin-bottom: 58px;
+  margin-right: 58px;
   width: 274px;
 }
-#Opportunities .page_container .invest_card .invest_card_header {
+@media (max-width: 1290px) {
+  #Opportunities .page_container .card_row .invest_card {
+    margin-right: 0px;
+  }
+}
+#Opportunities .page_container .card_row .invest_card:nth-child(4n) {
+  margin-right: 0px;
+}
+#Opportunities .page_container .card_row .invest_card .invest_card_header {
   height: 199px;
   background: var(--header-bg);
   display: flex;
   justify-content: center;
   align-items: center;
 }
-#Opportunities .page_container .invest_card .invest_card_body {
+#Opportunities .page_container .card_row .invest_card .invest_card_body {
   padding: 13px 24px;
 }
-#Opportunities .page_container .invest_card .invest_card_body li {
+#Opportunities .page_container .card_row .invest_card .invest_card_body li {
   display: flex;
   align-items: center;
   justify-content: space-between;
 }
-#Opportunities .page_container .invest_card .invest_card_body li .list_box:first-of-type {
+#Opportunities .page_container .card_row .invest_card .invest_card_body li .list_box:first-of-type {
   padding-right: 10px;
 }
-#Opportunities .page_container .invest_card .invest_card_body li .counter_wrapper button {
+#Opportunities .page_container .card_row .invest_card .invest_card_body li .counter_wrapper button {
   background: transparent;
   border: none;
   outline: none;
@@ -59,17 +84,17 @@
   align-items: center;
   border-radius: 100%;
 }
-#Opportunities .page_container .invest_card .invest_card_body li .counter_wrapper .counter_value {
+#Opportunities .page_container .card_row .invest_card .invest_card_body li .counter_wrapper .counter_value {
   margin: 0px 10px;
   display: inline-block;
   width: 30px;
   text-align: center;
 }
-#Opportunities .page_container .invest_card .invest_card_footer {
+#Opportunities .page_container .card_row .invest_card .invest_card_footer {
   padding: 0 24px;
   padding-bottom: 15px;
 }
-#Opportunities .page_container .invest_card .invest_card_footer .invest_btn {
+#Opportunities .page_container .card_row .invest_card .invest_card_footer .invest_btn {
   background: #fff;
   border: none;
   outline: none;

@@ -8,6 +8,12 @@
             color: #fff;
         }
 
+        ul,
+        ol {
+            margin: 0;
+            padding: 0;
+        }
+
         .page_header {
             margin-bottom: 72px;
 
@@ -21,7 +27,7 @@
 
         .page_sub_header {
             font-size: 34px;
-
+            margin-bottom: 58px;
             .counter {
                 font-size: 27px;
                 color: #707070;
@@ -29,77 +35,93 @@
             }
         }
 
-        // invest card css
-        .invest_card {
-            background: #343434;
-            border-radius: 4px;
-            overflow: hidden;
-            margin-bottom: 20px;
-            width: 274px;
-            .invest_card_header {
-                height: 199px;
-                background: var(--header-bg);
-                display: flex;
-                justify-content: center;
-                align-items: center;
+        .card_row {
+            display: flex;
+            flex-flow: row wrap;
+            margin-bottom: 84px;
+            // invest card css
+            @media (max-width: 1290px){
+                justify-content: space-around;
             }
-
-            .invest_card_body {
-                padding: 13px 24px;
-
-                li {
+            .invest_card {
+                background: #343434;
+                border-radius: 4px;
+                overflow: hidden;
+                margin-bottom: 58px;
+                margin-right: 58px;
+                width: 274px;
+                @media (max-width: 1290px){
+                    margin-right: 0px;
+                }
+                &:nth-child(4n){
+                    margin-right: 0px;
+                }
+                .invest_card_header {
+                    height: 199px;
+                    background: var(--header-bg);
                     display: flex;
+                    justify-content: center;
                     align-items: center;
-                    justify-content: space-between;
+                }
 
-                    .list_box:first-of-type {
-                        padding-right: 10px;
+                .invest_card_body {
+                    padding: 13px 24px;
+
+                    li {
+                        display: flex;
+                        align-items: center;
+                        justify-content: space-between;
+
+                        .list_box:first-of-type {
+                            padding-right: 10px;
+                        }
+
+                        .counter_wrapper {
+                            button {
+                                background: transparent;
+                                border: none;
+                                outline: none;
+                                $s: 24.33px;
+                                width: $s;
+                                height: $s;
+                                border: 1px solid rgba(255, 255, 255, 0.3);
+                                display: inline-flex;
+                                justify-content: center;
+                                align-items: center;
+                                border-radius: 100%;
+                            }
+
+                            .counter_value {
+                                margin: 0px 10px;
+                                display: inline-block;
+                                width: 30px;
+                                text-align: center;
+                            }
+                        }
                     }
+                }
 
-                    .counter_wrapper {
-                        button {
-                            background: transparent;
-                            border: none;
-                            outline: none;
-                            $s: 24.33px;
-                            width: $s;
-                            height: $s;
-                            border: 1px solid rgba(255, 255, 255, 0.3);
-                            display: inline-flex;
-                            justify-content: center;
-                            align-items: center;
-                            border-radius: 100%;
-                        }
+                .invest_card_footer {
+                    padding: 0 24px;
+                    padding-bottom: 15px;
 
-                        .counter_value {
-                            margin: 0px 10px;
-                            display: inline-block;
-                            width: 30px;
-                            text-align: center;
-                        }
+                    .invest_btn {
+                        background: #fff;
+                        border: none;
+                        outline: none;
+                        font-size: 15px;
+                        color: #000;
+                        text-align: center;
+                        display: block;
+                        width: 100%;
+                        border-radius: 52px;
+                        padding: 5px;
                     }
                 }
             }
 
-            .invest_card_footer {
-                padding: 0 24px;
-                padding-bottom: 15px;
-
-                .invest_btn {
-                    background: #fff;
-                    border: none;
-                    outline: none;
-                    font-size: 15px;
-                    color: #000;
-                    text-align: center;
-                    display: block;
-                    width: 100%;
-                    border-radius: 52px;
-                    padding: 5px;
-                }
-            }
+            // invest card css end
         }
 
-        // invest card css end
     }
 }
