@@ -1,0 +1,164 @@
+#LaunchShare {
+    .page_container {
+        max-width: 950px;
+        margin: auto;
+
+        * {
+            color: #fff;
+            font-weight: bold;
+        }
+
+        ul,
+        ol {
+            margin: 0;
+            padding: 0;
+        }
+
+        .form_wrapper {
+            margin-top: 92px;
+            margin-bottom: 92px;
+            padding-left: 90px;
+            padding-right: 90px;
+
+            @media (max-width: 750px) {
+                margin-top: 52px;
+                padding-left: 20px;
+                padding-right: 20px;
+            }
+
+            .form_header {
+                font-size: 52px;
+                margin-bottom: 80px;
+
+                @media (max-width: 750px) {
+                    font-size: 35px;
+                }
+            }
+
+            .form_field_list {
+                .form_field_list_item {
+                    display: flex;
+                    align-items: flex-start;
+                    justify-content: space-between;
+                    margin-bottom: 40px;
+
+                    @media (max-width: 750px) {
+                        display: block;
+                        margin-bottom: 20px;
+                        label {
+                            display: block;
+
+                        }
+
+                        input:not([type="range"]),
+                        textarea,
+                        .drop_model {
+                            width: 100% !important;
+                            max-width: 100% !important;
+
+                        }
+                    }
+
+                    label {
+                        font-size: 28px;
+                        font-weight: normal;
+                        small{
+                            display: block;
+                            font-size: 17px;
+                            font-weight: normal;
+                        }
+                        @media (max-width: 750px) {
+                            font-size: 18px;
+                            small{
+                                font-size: 13px;
+                            }
+                        }
+
+                    }
+
+                    input {
+                        font-size: 22px;
+
+                        @media (max-width: 750px) {
+                            font-size: 16px;
+                        }
+
+                        background: #363636;
+                        border: none;
+                        outline: none;
+                        padding: 4px 18px;
+                        width: 100%;
+                        max-width: 366.5px;
+                        font-weight: normal;
+
+                        &::placeholder {
+                            color: rgba(255, 255, 255, 0.5);
+                        }
+                    }
+
+                    .drop_model {
+                        width: 366.5px;
+                        height: 249px;
+                        border: 5px dashed #fff;
+                        border-radius: 8px;
+                        display: flex;
+                        justify-content: center;
+                        align-items: center;
+                        color: #747474;
+                        font-size: 28px;
+                        cursor: grabbing;
+
+                        input {
+                            width: auto;
+                        }
+                    }
+
+                    textarea {
+                        width: 100%;
+                        max-width: 366.5px;
+                        height: 200px;
+                        font-size: 22px;
+                        background: #363636;
+                        border: none;
+                        outline: none;
+                        padding: 4px 18px;
+                        resize: none;
+                        @media (max-width: 750px) {
+                            font-size: 16px;
+                        }
+                        &:focus {
+                            border: none;
+                            outline: none;
+                        }
+                    }
+                }
+            }
+
+            .btn_wrapper {
+                text-align: center;
+            }
+
+            .btn_action {
+                font-size: 15px;
+                border-radius: 52px;
+                width: 184px;
+                margin: auto;
+                background: var(--btn-bg);
+                border: none;
+                outline: none;
+                display: inline-flex;
+                justify-content: center;
+                align-items: center;
+                padding: 12px;
+                font-weight: bold;
+                margin-right: 109px;
+
+                &:last-child {
+                    margin-right: 0px;
+                }
+
+            }
+        }
+
+    }
+}

@@ -1,0 +1,150 @@
+#LaunchShare .page_container {
+  max-width: 950px;
+  margin: auto;
+}
+#LaunchShare .page_container * {
+  color: #fff;
+  font-weight: bold;
+}
+#LaunchShare .page_container ul,
+#LaunchShare .page_container ol {
+  margin: 0;
+  padding: 0;
+}
+#LaunchShare .page_container .form_wrapper {
+  margin-top: 92px;
+  margin-bottom: 92px;
+  padding-left: 90px;
+  padding-right: 90px;
+}
+@media (max-width: 750px) {
+  #LaunchShare .page_container .form_wrapper {
+    margin-top: 52px;
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+}
+#LaunchShare .page_container .form_wrapper .form_header {
+  font-size: 52px;
+  margin-bottom: 80px;
+}
+@media (max-width: 750px) {
+  #LaunchShare .page_container .form_wrapper .form_header {
+    font-size: 35px;
+  }
+}
+#LaunchShare .page_container .form_wrapper .form_field_list .form_field_list_item {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  margin-bottom: 40px;
+}
+@media (max-width: 750px) {
+  #LaunchShare .page_container .form_wrapper .form_field_list .form_field_list_item {
+    display: block;
+    margin-bottom: 20px;
+  }
+  #LaunchShare .page_container .form_wrapper .form_field_list .form_field_list_item label {
+    display: block;
+  }
+  #LaunchShare .page_container .form_wrapper .form_field_list .form_field_list_item input:not([type=range]),
+  #LaunchShare .page_container .form_wrapper .form_field_list .form_field_list_item textarea,
+  #LaunchShare .page_container .form_wrapper .form_field_list .form_field_list_item .drop_model {
+    width: 100% !important;
+    max-width: 100% !important;
+  }
+}
+#LaunchShare .page_container .form_wrapper .form_field_list .form_field_list_item label {
+  font-size: 28px;
+  font-weight: normal;
+}
+#LaunchShare .page_container .form_wrapper .form_field_list .form_field_list_item label small {
+  display: block;
+  font-size: 17px;
+  font-weight: normal;
+}
+@media (max-width: 750px) {
+  #LaunchShare .page_container .form_wrapper .form_field_list .form_field_list_item label {
+    font-size: 18px;
+  }
+  #LaunchShare .page_container .form_wrapper .form_field_list .form_field_list_item label small {
+    font-size: 13px;
+  }
+}
+#LaunchShare .page_container .form_wrapper .form_field_list .form_field_list_item input {
+  font-size: 22px;
+  background: #363636;
+  border: none;
+  outline: none;
+  padding: 4px 18px;
+  width: 100%;
+  max-width: 366.5px;
+  font-weight: normal;
+}
+@media (max-width: 750px) {
+  #LaunchShare .page_container .form_wrapper .form_field_list .form_field_list_item input {
+    font-size: 16px;
+  }
+}
+#LaunchShare .page_container .form_wrapper .form_field_list .form_field_list_item input::-moz-placeholder {
+  color: rgba(255, 255, 255, 0.5);
+}
+#LaunchShare .page_container .form_wrapper .form_field_list .form_field_list_item input::placeholder {
+  color: rgba(255, 255, 255, 0.5);
+}
+#LaunchShare .page_container .form_wrapper .form_field_list .form_field_list_item .drop_model {
+  width: 366.5px;
+  height: 249px;
+  border: 5px dashed #fff;
+  border-radius: 8px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #747474;
+  font-size: 28px;
+  cursor: grabbing;
+}
+#LaunchShare .page_container .form_wrapper .form_field_list .form_field_list_item .drop_model input {
+  width: auto;
+}
+#LaunchShare .page_container .form_wrapper .form_field_list .form_field_list_item textarea {
+  width: 100%;
+  max-width: 366.5px;
+  height: 200px;
+  font-size: 22px;
+  background: #363636;
+  border: none;
+  outline: none;
+  padding: 4px 18px;
+  resize: none;
+}
+@media (max-width: 750px) {
+  #LaunchShare .page_container .form_wrapper .form_field_list .form_field_list_item textarea {
+    font-size: 16px;
+  }
+}
+#LaunchShare .page_container .form_wrapper .form_field_list .form_field_list_item textarea:focus {
+  border: none;
+  outline: none;
+}
+#LaunchShare .page_container .form_wrapper .btn_wrapper {
+  text-align: center;
+}
+#LaunchShare .page_container .form_wrapper .btn_action {
+  font-size: 15px;
+  border-radius: 52px;
+  width: 184px;
+  margin: auto;
+  background: var(--btn-bg);
+  border: none;
+  outline: none;
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  padding: 12px;
+  font-weight: bold;
+  margin-right: 109px;
+}
+#LaunchShare .page_container .form_wrapper .btn_action:last-child {
+  margin-right: 0px;
+}/*# sourceMappingURL=LaunchShare.css.map */

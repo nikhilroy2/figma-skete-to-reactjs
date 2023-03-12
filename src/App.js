@@ -15,6 +15,7 @@ import CreateMarket from './Pages/CreateMarket/CreateMarket';
 import FindOpportunities from './Pages/FindOpportunities/FindOpportunities';
 import YourPosition from './Pages/YourPosition/YourPosition';
 import RequestDemo from './Pages/RequestDemo/RequestDemo';
+import LaunchShare from './Pages/LaunchShare/LaunchShare';
 
 function App() {
 
@@ -44,6 +45,9 @@ function App() {
         </Routes>
         <Routes>
           <Route path="/request_demo" element={<RequestDemo></RequestDemo>}></Route>
+        </Routes>
+        <Routes>
+          <Route path="/launch_share" element={<LaunchShare></LaunchShare>}></Route>
         </Routes>
       </BrowserRouter>
     </div>
