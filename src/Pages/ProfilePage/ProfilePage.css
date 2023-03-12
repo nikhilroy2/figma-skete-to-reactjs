@@ -1,3 +1,6 @@
+#ProfilePage {
+  zoom: 75%;
+}
 #ProfilePage .page_container {
   max-width: 950px;
   margin: auto;

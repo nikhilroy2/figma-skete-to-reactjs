@@ -1,3 +1,6 @@
+#RequestDemo {
+  zoom: 75%;
+}
 #RequestDemo .page_container {
   max-width: 950px;
   margin: auto;

@@ -26,7 +26,9 @@ function App() {
   return (
     <div className="App">
       <BrowserRouter>
-       
+        <Routes>
+          <Route path="/"  element={<HomePage></HomePage>}></Route>
+        </Routes>
         <Routes>
           <Route path="/page1" element={<Page1></Page1>}></Route>
         </Routes>
@@ -65,9 +67,6 @@ function App() {
         </Routes>
         <Routes>
           <Route path="/page_list" element={<PageList></PageList>}></Route>
-        </Routes>
-        <Routes>
-          <Route path="/"  element={<HomePage></HomePage>}></Route>
         </Routes>
       </BrowserRouter>
     </div>
@@ -147,7 +146,7 @@ function HomePage() {
   }
 
   return (
-    <div className="page-container">
+    <div className="page-container homepage">
       <div style={{ width: "80%", display: "flex", flexDirection: "column", alignItems: "center" }}>
         <h2 className='text-center' style={{ fontSize: 40, color: "orange", fontFamily: "fantasy" }}>MACHINE LEARNING NFT MARKETPLACE</h2>
         <img src={connected ? disconnectWalletImage : connectWalletImage} onClick={!connected ? ConnectWallet : DisconnectWallet} width={300} alt='metamask' />
