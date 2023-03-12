@@ -1,0 +1,60 @@
+#RequestsDataScientist .page_container {
+  max-width: 950px;
+  margin: auto;
+  margin-top: 92px;
+  margin-bottom: 92px;
+}
+#RequestsDataScientist .page_container * {
+  color: #fff;
+  font-weight: bold;
+}
+#RequestsDataScientist .page_container ul,
+#RequestsDataScientist .page_container ol {
+  margin: 0;
+  padding: 0;
+}
+#RequestsDataScientist .page_container .section_header {
+  font-size: 50px;
+  text-align: center;
+  margin-bottom: 67px;
+}
+@media (max-width: 760px) {
+  #RequestsDataScientist .page_container .section_header {
+    font-size: 35px;
+    margin-bottom: 35px;
+  }
+}
+#RequestsDataScientist .page_container .table_wrapper {
+  width: 100%;
+  overflow: auto;
+  min-width: 760px;
+}
+#RequestsDataScientist .page_container .table_wrapper table {
+  width: 100%;
+}
+#RequestsDataScientist .page_container .table_wrapper table thead {
+  border-bottom: 1px solid #fff;
+}
+#RequestsDataScientist .page_container .table_wrapper table thead th {
+  text-align: center;
+  padding-bottom: 14px;
+  white-space: nowrap;
+}
+#RequestsDataScientist .page_container .table_wrapper table tbody tr td {
+  padding-bottom: 13px;
+  text-align: center;
+  font-weight: normal;
+}
+#RequestsDataScientist .page_container .table_wrapper table tbody tr td .table_action_btn {
+  width: 107px;
+  background: var(--bg);
+  border: none;
+  outline: none;
+  border-radius: 52px;
+  font-size: 14px;
+  padding: 5px;
+  display: inline-block;
+}
+#RequestsDataScientist .page_container .table_wrapper table tbody tr:first-child td {
+  padding-top: 13px;
+}/*# sourceMappingURL=RequestsDataScientist.css.map */

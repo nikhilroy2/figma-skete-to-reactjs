@@ -1,0 +1,84 @@
+#MyProjects {
+    .page_container {
+        max-width: 1590px;
+        margin: auto;
+        margin-top: 92px;
+        margin-bottom: 92px;
+
+        * {
+            color: #fff;
+            font-weight: bold;
+        }
+
+        ul,
+        ol {
+            margin: 0;
+            padding: 0;
+        }
+
+        .section_header {
+            font-size: 50px;
+            text-align: center;
+            margin-bottom: 67px;
+
+            @media (max-width: 760px) {
+                font-size: 35px;
+                margin-bottom: 35px;
+            }
+        }
+        .flex_row{
+            display: flex;
+            justify-content: center;
+        }
+        .table_wrapper {
+            width: 1450px;
+            overflow: auto;
+            table {
+                width: 100%;
+
+                thead {
+                    border-bottom: 1px solid #fff;
+
+                    th {
+                        text-align: center;
+                        padding-bottom: 14px;
+                        white-space: nowrap;
+                    }
+                }
+
+                tbody {
+                    tr {
+                        td {
+                            white-space: nowrap;
+                            padding-left: 8px;
+                            padding-right: 8px;
+                            padding-bottom: 13px;
+                            text-align: center;
+                            font-weight: normal;
+
+                            .table_action_btn {
+                                min-width: 107px;
+                                background: var(--bg);
+                                border: none;
+                                outline: none;
+                                border-radius: 52px;
+                                font-size: 14px;
+                                padding: 5px 0px;
+                                display: inline-block;
+                                white-space: nowrap;
+                            }
+                        }
+
+                        &:first-child {
+                            td {
+                                padding-top: 13px;
+                            }
+                        }
+                    }
+
+                }
+            }
+        }
+
+    }
+}

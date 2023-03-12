@@ -1,0 +1,67 @@
+#MyProjects .page_container {
+  max-width: 1590px;
+  margin: auto;
+  margin-top: 92px;
+  margin-bottom: 92px;
+}
+#MyProjects .page_container * {
+  color: #fff;
+  font-weight: bold;
+}
+#MyProjects .page_container ul,
+#MyProjects .page_container ol {
+  margin: 0;
+  padding: 0;
+}
+#MyProjects .page_container .section_header {
+  font-size: 50px;
+  text-align: center;
+  margin-bottom: 67px;
+}
+@media (max-width: 760px) {
+  #MyProjects .page_container .section_header {
+    font-size: 35px;
+    margin-bottom: 35px;
+  }
+}
+#MyProjects .page_container .flex_row {
+  display: flex;
+  justify-content: center;
+}
+#MyProjects .page_container .table_wrapper {
+  width: 1450px;
+  overflow: auto;
+}
+#MyProjects .page_container .table_wrapper table {
+  width: 100%;
+}
+#MyProjects .page_container .table_wrapper table thead {
+  border-bottom: 1px solid #fff;
+}
+#MyProjects .page_container .table_wrapper table thead th {
+  text-align: center;
+  padding-bottom: 14px;
+  white-space: nowrap;
+}
+#MyProjects .page_container .table_wrapper table tbody tr td {
+  white-space: nowrap;
+  padding-left: 8px;
+  padding-right: 8px;
+  padding-bottom: 13px;
+  text-align: center;
+  font-weight: normal;
+}
+#MyProjects .page_container .table_wrapper table tbody tr td .table_action_btn {
+  min-width: 107px;
+  background: var(--bg);
+  border: none;
+  outline: none;
+  border-radius: 52px;
+  font-size: 14px;
+  padding: 5px 0px;
+  display: inline-block;
+  white-space: nowrap;
+}
+#MyProjects .page_container .table_wrapper table tbody tr:first-child td {
+  padding-top: 13px;
+}/*# sourceMappingURL=MyProjects.css.map */

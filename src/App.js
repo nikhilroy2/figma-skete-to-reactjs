@@ -16,6 +16,10 @@ import FindOpportunities from './Pages/FindOpportunities/FindOpportunities';
 import YourPosition from './Pages/YourPosition/YourPosition';
 import RequestDemo from './Pages/RequestDemo/RequestDemo';
 import LaunchShare from './Pages/LaunchShare/LaunchShare';
+import RequestsDataScientist from './Pages/RequestsDataScientist/RequestsDataScientist';
+import MyProjects from './Pages/MyProjects/MyProjects';
+import ProfilePage from './Pages/ProfilePage/ProfilePage';
+import SignIn from './Pages/SignIn/SignIn';
 
 function App() {
 
@@ -48,6 +52,18 @@ function App() {
         </Routes>
         <Routes>
           <Route path="/launch_share" element={<LaunchShare></LaunchShare>}></Route>
+        </Routes>
+        <Routes>
+          <Route path="/request_data_scientist" element={<RequestsDataScientist></RequestsDataScientist>}></Route>
+        </Routes>
+        <Routes>
+          <Route path="/my_projects" element={<MyProjects></MyProjects>}></Route>
+        </Routes>
+        <Routes>
+          <Route path="/profile_page" element={<ProfilePage></ProfilePage>}></Route>
+        </Routes>
+        <Routes>
+          <Route path="/signin" element={<SignIn></SignIn>}></Route>
         </Routes>
       </BrowserRouter>
     </div>
