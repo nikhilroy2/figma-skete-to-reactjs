@@ -10,6 +10,7 @@ import { BrowserRouter, Routes, Route } from "react-router-dom";
 //  Pages import
 import Page1 from './Pages/Page1/Page1';
 import Opportunities from './Pages/Opportunities/Opportunities';
+import MyAssets from './Pages/MyAssets/MyAssets';
 
 function App() {
 
@@ -24,6 +25,9 @@ function App() {
         </Routes>
         <Routes>
           <Route path="/opportunities" element={<Opportunities></Opportunities>}></Route>
+        </Routes>
+        <Routes>
+          <Route path="/my_assets" element={<MyAssets></MyAssets>}></Route>
         </Routes>
       </BrowserRouter>
     </div>
