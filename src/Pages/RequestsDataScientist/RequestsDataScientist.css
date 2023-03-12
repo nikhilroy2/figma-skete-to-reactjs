@@ -7,6 +7,7 @@
 #RequestsDataScientist .page_container * {
   color: #fff;
   font-weight: bold;
+  font-family: "Inter", sans-serif;
 }
 #RequestsDataScientist .page_container ul,
 #RequestsDataScientist .page_container ol {

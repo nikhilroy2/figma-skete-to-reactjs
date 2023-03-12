@@ -11,6 +11,8 @@
 }
 #MyAssets .page_container * {
   color: #fff;
+  font-family: "Inter", sans-serif;
+  font-weight: bold;
 }
 #MyAssets .page_container ul,
 #MyAssets .page_container ol {
@@ -107,15 +109,28 @@
   align-items: center;
 }
 #MyAssets .page_container .card_row .invest_card .invest_card_body {
-  padding: 13px 24px;
+  padding: 17px 23px 13px 28px;
 }
 #MyAssets .page_container .card_row .invest_card .invest_card_body li {
   display: flex;
-  align-items: center;
+  align-items: flex-end;
   justify-content: space-between;
 }
 #MyAssets .page_container .card_row .invest_card .invest_card_body li .list_box:first-of-type {
   padding-right: 10px;
+}
+#MyAssets .page_container .card_row .invest_card .invest_card_body li .list_h2 span {
+  display: block;
+  font-size: 23px;
+  font-weight: normal;
+}
+#MyAssets .page_container .card_row .invest_card .invest_card_body li .list_h2 strong {
+  font-size: 23px;
+  font-family: "Outfit", sans-serif;
+}
+#MyAssets .page_container .card_row .invest_card .invest_card_body li .counting_number {
+  font-size: 23px;
+  color: rgba(255, 255, 255, 0.5);
 }
 #MyAssets .page_container .card_row .invest_card .invest_card_body li .counter_wrapper button {
   background: transparent;
@@ -138,6 +153,8 @@
 #MyAssets .page_container .card_row .invest_card .invest_card_footer {
   padding: 0 24px;
   padding-bottom: 15px;
+  display: flex;
+  justify-content: space-between;
 }
 #MyAssets .page_container .card_row .invest_card .invest_card_footer .invest_btn {
   background: #fff;
@@ -150,4 +167,8 @@
   width: 100%;
   border-radius: 52px;
   padding: 5px;
+  font-weight: bold;
+}
+#MyAssets .page_container .card_row .invest_card .invest_card_footer .invest_btn:first-child {
+  margin-right: 19px;
 }/*# sourceMappingURL=MyAssets.css.map */

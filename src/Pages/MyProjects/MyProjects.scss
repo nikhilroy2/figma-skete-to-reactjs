@@ -8,6 +8,8 @@
         * {
             color: #fff;
             font-weight: bold;
+            font-family: 'Inter', sans-serif;
+
         }
 
         ul,
@@ -26,13 +28,16 @@
                 margin-bottom: 35px;
             }
         }
-        .flex_row{
+
+        .flex_row {
             display: flex;
             justify-content: center;
         }
+
         .table_wrapper {
             width: 1450px;
             overflow: auto;
+
             table {
                 width: 100%;
 

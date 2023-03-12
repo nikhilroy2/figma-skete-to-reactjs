@@ -5,6 +5,7 @@
 #RequestDemo .page_container * {
   color: #fff;
   font-weight: bold;
+  font-family: "Inter", sans-serif;
 }
 #RequestDemo .page_container ul,
 #RequestDemo .page_container ol {
@@ -38,6 +39,26 @@
   align-items: flex-start;
   justify-content: space-between;
   margin-bottom: 40px;
+}
+#RequestDemo .page_container .form_wrapper .form_field_list .form_field_list_item .progress_bar {
+  width: 244px;
+  height: 12px;
+  background: #fff;
+  position: relative;
+  border-radius: 20px;
+  padding: 3px;
+}
+#RequestDemo .page_container .form_wrapper .form_field_list .form_field_list_item .progress_bar::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 50%;
+  margin-left: 3px;
+  transform: translateY(-50%);
+  border-radius: 20px;
+  height: 6px;
+  background: #CD6116;
+  width: var(--progress);
 }
 @media (max-width: 750px) {
   #RequestDemo .page_container .form_wrapper .form_field_list .form_field_list_item {

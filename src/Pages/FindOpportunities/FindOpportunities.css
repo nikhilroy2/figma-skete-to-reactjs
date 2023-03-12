@@ -10,6 +10,7 @@
 #FindOpportunities .page_container * {
   color: #fff;
   font-weight: bold;
+  font-family: "Inter", sans-serif;
 }
 #FindOpportunities .page_container ul,
 #FindOpportunities .page_container ol {

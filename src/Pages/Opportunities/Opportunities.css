@@ -11,6 +11,8 @@
 }
 #Opportunities .page_container * {
   color: #fff;
+  font-family: "Inter", sans-serif;
+  font-weight: bold;
 }
 #Opportunities .page_container ul,
 #Opportunities .page_container ol {

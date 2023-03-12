@@ -12,7 +12,7 @@ function MyAssets(props) {
                     id: 1,
                     bg: '#C73C3C',
                     img: require('../../images/logo-frenchfry.png'),
-                    subway: 888,
+                    subway: 1254,
                     tiex: '5.2 TIEX',
                     invest_counter: 134
                 },
@@ -20,7 +20,7 @@ function MyAssets(props) {
                     id: 2,
                     bg: '#C73C3C',
                     img: require('../../images/logo-frenchfry.png'),
-                    subway: 888,
+                    subway: 1254,
                     tiex: '5.2 TIEX',
                     invest_counter: 134
                 },
@@ -28,7 +28,7 @@ function MyAssets(props) {
                     id: 3,
                     bg: '#C73C3C',
                     img: require('../../images/logo-frenchfry.png'),
-                    subway: 888,
+                    subway: 1254,
                     tiex: '5.2 TIEX',
                     invest_counter: 134
                 },
@@ -36,7 +36,7 @@ function MyAssets(props) {
                     id: 4,
                     bg: '#C73C3C',
                     img: require('../../images/logo-frenchfry.png'),
-                    subway: 888,
+                    subway: 1254,
                     tiex: '5.2 TIEX',
                     invest_counter: 134
                 },
@@ -44,7 +44,7 @@ function MyAssets(props) {
                     id: 5,
                     bg: '#C73C3C',
                     img: require('../../images/logo-frenchfry.png'),
-                    subway: 888,
+                    subway: 1254,
                     tiex: '5.2 TIEX',
                     invest_counter: 134
                 },
@@ -52,7 +52,7 @@ function MyAssets(props) {
                     id: 6,
                     bg: '#C73C3C',
                     img: require('../../images/logo-frenchfry.png'),
-                    subway: 888,
+                    subway: 1254,
                     tiex: '5.2 TIEX',
                     invest_counter: 134
                 },
@@ -60,7 +60,7 @@ function MyAssets(props) {
                     id: 7,
                     bg: '#C73C3C',
                     img: require('../../images/logo-frenchfry.png'),
-                    subway: 888,
+                    subway: 1254,
                     tiex: '5.2 TIEX',
                     invest_counter: 134
                 },
@@ -68,7 +68,7 @@ function MyAssets(props) {
                     id: 8,
                     bg: '#C73C3C',
                     img: require('../../images/logo-frenchfry.png'),
-                    subway: 888,
+                    subway: 1254,
                     tiex: '5.2 TIEX',
                     invest_counter: 134
                 },
@@ -132,42 +132,25 @@ const InvestCard = ({ j }) => {
                 <ul>
                     <li>
                         <div className="list_box">
-                            <h2 style={{ fontSize: '13px' }}>FRENCHFRY (Subway)</h2>
-                        </div>
-                        <div className="list_box" style={{ whiteSpace: 'nowrap' }}>
-                            {investCounter} / {j.subway}
-                        </div>
-                    </li>
-                    <li>
-                        <div className="list_box">
-                            <h2 style={{ fontSize: '19px' }}>
-                                {j.tiex}
+                            <h2 className='list_h2'>
+                                <span>FRNECHFRY</span>
+                                <strong>
+                                    FNCF
+                                </strong>
                             </h2>
                         </div>
-                        <div className="list_box">
-                            <div className="counter_wrapper">
-                                <button className="counter_plus" onClick={() => setInvestCounter(investCounter + 1)}>
-                                    <svg width={8} height={8} viewBox="0 0 8 8" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                        <path d="M8 4H0" stroke="white" strokeWidth={2} />
-                                        <path d="M4 8L4 0" stroke="white" strokeWidth={2} />
-                                    </svg>
-
-                                </button>
-                                <span className="counter_value">{investCounter}</span>
-                                <button className="counter_minus" onClick={() => setInvestCounter(investCounter - 1)}>
-                                    <svg width={8} height={8} viewBox="0 0 8 8" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                        <path d="M8 4H0" stroke="white" strokeWidth={2} />
-                                        {/* <path d="M4 8L4 0" stroke="white" strokeWidth={2} /> */}
-                                    </svg>
-                                </button>
-                            </div>
+                        <div className="list_box counting_number" style={{ whiteSpace: 'nowrap' }}>
+                            #{j.subway}
                         </div>
                     </li>
                 </ul>
             </div>
             <div className="invest_card_footer">
                 <button className="invest_btn">
-                    Invest
+                    View
+                </button>
+                <button className="invest_btn">
+                    Transer
                 </button>
             </div>
         </div>

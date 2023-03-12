@@ -26,7 +26,7 @@ function RequestDemo(props) {
                                 Brand:
                             </label>
                             <div className="drop_model">
-                                <input type="range" />
+                                <div style={{'--progress': '50%'}} className="progress_bar"></div>
                             </div>
                         </li>
                         <li className='form_field_list_item'>

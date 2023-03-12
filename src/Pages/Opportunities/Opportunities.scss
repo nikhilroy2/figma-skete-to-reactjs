@@ -3,12 +3,16 @@
         max-width: 1287px;
         margin: auto;
         margin-top: 82px;
+
         @media (max-width: 1000px) {
             padding-left: 25px;
             padding-right: 25px;
         }
+
         * {
             color: #fff;
+            font-family: 'Inter', sans-serif;
+            font-weight: bold;
         }
 
         ul,

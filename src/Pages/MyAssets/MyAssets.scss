@@ -11,6 +11,8 @@
 
         * {
             color: #fff;
+            font-family: 'Inter', sans-serif;
+            font-weight: bold;
         }
 
         ul,
@@ -115,15 +117,33 @@
                 }
 
                 .invest_card_body {
-                    padding: 13px 24px;
+                    padding: 17px 23px 13px 28px;
 
                     li {
                         display: flex;
-                        align-items: center;
+                        align-items: flex-end;
                         justify-content: space-between;
 
                         .list_box:first-of-type {
                             padding-right: 10px;
+                        }
+
+                        .list_h2 {
+                            span {
+                                display: block;
+                                font-size: 23px;
+                                font-weight: normal;
+                            }
+
+                            strong {
+                                font-size: 23px;
+                                font-family: 'Outfit', sans-serif;
+                            }
+                        }
+
+                        .counting_number {
+                            font-size: 23px;
+                            color: rgba(255, 255, 255, 0.5);
                         }
 
                         .counter_wrapper {
@@ -154,6 +174,8 @@
                 .invest_card_footer {
                     padding: 0 24px;
                     padding-bottom: 15px;
+                    display: flex;
+                    justify-content: space-between;
 
                     .invest_btn {
                         background: #fff;
@@ -166,6 +188,11 @@
                         width: 100%;
                         border-radius: 52px;
                         padding: 5px;
+                        font-weight: bold;
+
+                        &:first-child {
+                            margin-right: 19px;
+                        }
                     }
                 }
             }

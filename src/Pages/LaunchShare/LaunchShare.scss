@@ -6,6 +6,8 @@
         * {
             color: #fff;
             font-weight: bold;
+            font-family: 'Inter', sans-serif;
+
         }
 
         ul,
@@ -45,6 +47,7 @@
                     @media (max-width: 750px) {
                         display: block;
                         margin-bottom: 20px;
+
                         label {
                             display: block;
 
@@ -62,14 +65,17 @@
                     label {
                         font-size: 28px;
                         font-weight: normal;
-                        small{
+
+                        small {
                             display: block;
                             font-size: 17px;
                             font-weight: normal;
                         }
+
                         @media (max-width: 750px) {
                             font-size: 18px;
-                            small{
+
+                            small {
                                 font-size: 13px;
                             }
                         }
@@ -123,9 +129,11 @@
                         outline: none;
                         padding: 4px 18px;
                         resize: none;
+
                         @media (max-width: 750px) {
                             font-size: 16px;
                         }
+
                         &:focus {
                             border: none;
                             outline: none;
