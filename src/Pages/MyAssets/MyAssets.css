@@ -171,4 +171,69 @@
 }
 #MyAssets .page_container .card_row .invest_card .invest_card_footer .invest_btn:first-child {
   margin-right: 19px;
+}
+#MyAssets .modal_view {
+  position: fixed;
+  background: rgba(0, 0, 0, 0.8);
+  width: 100vw;
+  height: 100vh;
+  top: 0;
+  left: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+#MyAssets .modal_view .modal_body {
+  width: 600px;
+  padding: 30px;
+  border-radius: 5px;
+  background: #1F1F1F;
+  color: #fff;
+  position: relative;
+}
+#MyAssets .modal_view .modal_body .close_btn {
+  position: absolute;
+  right: -18px;
+  top: -18px;
+  background: transparent;
+  color: #fff;
+  border: none;
+  outline: none;
+  padding: 5px;
+  border-radius: 100%;
+}
+#MyAssets .modal_view .modal_body .close_btn svg {
+  width: 30px;
+  height: 30px;
+  fill: #fff;
+}
+#MyAssets .modal_view .modal_body .flex_row {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+#MyAssets .modal_view .modal_body .flex_row small {
+  color: rgba(255, 255, 255, 0.5);
+}
+#MyAssets .modal_view .modal_body input {
+  background: #363636;
+  border: none;
+  outline: none;
+  padding: 4px 18px;
+  color: white;
+  margin: 20px auto;
+  width: 100%;
+  display: block;
+}
+#MyAssets .modal_view .modal_body .send_btn {
+  background: #0AA56D;
+  color: #fff;
+  padding: 3px 8px;
+  border-radius: 4px;
+  width: 180px;
+  display: block;
+  margin: auto;
+  margin-top: 15px;
+  border: none;
+  outline: none;
 }/*# sourceMappingURL=MyAssets.css.map */

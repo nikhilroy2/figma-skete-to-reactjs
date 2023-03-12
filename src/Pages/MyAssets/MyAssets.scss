@@ -201,4 +201,79 @@
         }
 
     }
+
+    .modal_view {
+        position: fixed;
+        background: rgba(0, 0, 0, 0.8);
+        width: 100vw;
+        height: 100vh;
+        top: 0;
+        left: 0;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        .modal_body {
+            width: 600px;
+            padding: 30px;
+            border-radius: 5px;
+            background: #1F1F1F;
+            color: #fff;
+            position: relative;
+
+            .close_btn {
+                position: absolute;
+                right: -18px;
+                top: -18px;
+                background: transparent;
+                color: #fff;
+                border: none;
+                outline: none;
+                padding: 5px;
+                border-radius: 100%;
+
+                svg {
+                    width: 30px;
+                    height: 30px;
+                    fill: #fff;
+                }
+            }
+
+            .flex_row {
+                display: flex;
+                align-items: center;
+                justify-content: space-between;
+
+                small {
+                    color: rgba(255, 255, 255, 0.5);
+                }
+
+
+            }
+
+            input {
+                background: #363636;
+                border: none;
+                outline: none;
+                padding: 4px 18px;
+                color: white;
+                margin: 20px auto;
+                width: 100%;
+                display: block;
+            }
+
+            .send_btn {
+                background: #0AA56D;
+                color: #fff;
+                padding: 3px 8px;
+                border-radius: 4px;
+                width: 180px;
+                display: block;
+                margin: auto;
+                margin-top: 15px;
+                border: none;
+                outline: none;
+            }
+        }
+    }
 }
