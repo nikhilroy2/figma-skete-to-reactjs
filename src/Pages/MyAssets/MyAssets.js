@@ -81,9 +81,6 @@ function MyAssets(props) {
                 <h2 className="page_header">
                     My Assets<small className="counter">(12)</small>
                 </h2>
-
-
-
                 {/* card */}
                 <div className="card_wrapper">
                     {invest_card_object.map(v => {

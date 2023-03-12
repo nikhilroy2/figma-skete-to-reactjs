@@ -11,6 +11,9 @@ import { BrowserRouter, Routes, Route } from "react-router-dom";
 import Page1 from './Pages/Page1/Page1';
 import Opportunities from './Pages/Opportunities/Opportunities';
 import MyAssets from './Pages/MyAssets/MyAssets';
+import CreateMarket from './Pages/CreateMarket/CreateMarket';
+import FindOpportunities from './Pages/FindOpportunities/FindOpportunities';
+import YourPosition from './Pages/YourPosition/YourPosition';
 
 function App() {
 
@@ -28,6 +31,15 @@ function App() {
         </Routes>
         <Routes>
           <Route path="/my_assets" element={<MyAssets></MyAssets>}></Route>
+        </Routes>
+        <Routes>
+          <Route path="/create_market" element={<CreateMarket></CreateMarket>}></Route>
+        </Routes>
+        <Routes>
+          <Route path="/find_opportunities" element={<FindOpportunities></FindOpportunities>}></Route>
+        </Routes>
+        <Routes>
+          <Route path="/your_position" element={<YourPosition></YourPosition>}></Route>
         </Routes>
       </BrowserRouter>
     </div>

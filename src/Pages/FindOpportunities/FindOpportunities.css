@@ -1,0 +1,44 @@
+#FindOpportunities .page_container {
+  max-width: 1287px;
+  margin: auto;
+  margin-top: 82px;
+  height: 75vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+#FindOpportunities .page_container * {
+  color: #fff;
+  font-weight: bold;
+}
+#FindOpportunities .page_container ul,
+#FindOpportunities .page_container ol {
+  margin: 0;
+  padding: 0;
+}
+#FindOpportunities .page_container .action_wrapper {
+  text-align: center;
+}
+#FindOpportunities .page_container .action_wrapper h2 {
+  text-align: center;
+  font-size: 50px;
+  margin-bottom: 124px;
+}
+#FindOpportunities .page_container .action_wrapper .btn_action {
+  font-size: 15px;
+  border-radius: 52px;
+  width: 184px;
+  margin: auto;
+  background: var(--btn-bg);
+  border: none;
+  outline: none;
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  padding: 12px;
+  font-weight: bold;
+  margin-right: 109px;
+}
+#FindOpportunities .page_container .action_wrapper .btn_action:last-child {
+  margin-right: 0px;
+}/*# sourceMappingURL=FindOpportunities.css.map */
