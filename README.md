@@ -4,42 +4,42 @@
 
 <ol>
     <li>
-        <a href="http://localhost:3000">http://localhost:3000</a>
+        <a href="https://figmato-reactjs-converting-pages.netlify.app">https://figmato-reactjs-converting-pages.netlify.app</a>
     </li>
     <li>
-        <a href="http://localhost:3000/page1">http://localhost:3000/page1</a>
+        <a href="https://figmato-reactjs-converting-pages.netlify.app/page1">https://figmato-reactjs-converting-pages.netlify.app/page1</a>
     </li>
     <li>
-        <a href="http://localhost:3000/opportunities">http://localhost:3000/opportunities</a>
+        <a href="https://figmato-reactjs-converting-pages.netlify.app/opportunities">https://figmato-reactjs-converting-pages.netlify.app/opportunities</a>
     </li>
     <li>
-        <a href="http://localhost:3000/my_assets">http://localhost:3000/my_assets</a>
+        <a href="https://figmato-reactjs-converting-pages.netlify.app/my_assets">https://figmato-reactjs-converting-pages.netlify.app/my_assets</a>
     </li>
     <li>
-        <a href="http://localhost:3000/create_market">http://localhost:3000/create_market</a>
+        <a href="https://figmato-reactjs-converting-pages.netlify.app/create_market">https://figmato-reactjs-converting-pages.netlify.app/create_market</a>
     </li>
     <li>
-        <a href="http://localhost:3000/find_opportunities">http://localhost:3000/find_opportunities</a>
+        <a href="https://figmato-reactjs-converting-pages.netlify.app/find_opportunities">https://figmato-reactjs-converting-pages.netlify.app/find_opportunities</a>
     </li>
     <li>
-        <a href="http://localhost:3000/your_position">http://localhost:3000/your_position</a>
+        <a href="https://figmato-reactjs-converting-pages.netlify.app/your_position">https://figmato-reactjs-converting-pages.netlify.app/your_position</a>
     </li>
     <li>
-        <a href="http://localhost:3000/request_demo">http://localhost:3000/request_demo</a>
+        <a href="https://figmato-reactjs-converting-pages.netlify.app/request_demo">https://figmato-reactjs-converting-pages.netlify.app/request_demo</a>
     </li>
     <li>
-        <a href="http://localhost:3000/launch_share">http://localhost:3000/launch_share</a>
+        <a href="https://figmato-reactjs-converting-pages.netlify.app/launch_share">https://figmato-reactjs-converting-pages.netlify.app/launch_share</a>
     </li>
     <li>
-        <a href="http://localhost:3000/request_data_scientist">http://localhost:3000/request_data_scientist</a>
+        <a href="https://figmato-reactjs-converting-pages.netlify.app/request_data_scientist">https://figmato-reactjs-converting-pages.netlify.app/request_data_scientist</a>
     </li>
     <li>
-        <a href="http://localhost:3000/my_projects">http://localhost:3000/my_projects</a>
+        <a href="https://figmato-reactjs-converting-pages.netlify.app/my_projects">https://figmato-reactjs-converting-pages.netlify.app/my_projects</a>
     </li>
     <li>
-        <a href="http://localhost:3000/profile_page">http://localhost:3000/profile_page</a>
+        <a href="https://figmato-reactjs-converting-pages.netlify.app/profile_page">https://figmato-reactjs-converting-pages.netlify.app/profile_page</a>
     </li>
     <li>
-        <a href="http://localhost:3000/signin">http://localhost:3000/signin</a>
+        <a href="https://figmato-reactjs-converting-pages.netlify.app/signin">https://figmato-reactjs-converting-pages.netlify.app/signin</a>
     </li>
 </ol>
