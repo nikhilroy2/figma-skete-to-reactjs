@@ -1,1 +1,142 @@
-/*# sourceMappingURL=RequestDemo.css.map */
+#RequestDemo .page_container {
+  max-width: 950px;
+  margin: auto;
+}
+#RequestDemo .page_container * {
+  color: #fff;
+  font-weight: bold;
+}
+#RequestDemo .page_container ul,
+#RequestDemo .page_container ol {
+  margin: 0;
+  padding: 0;
+}
+#RequestDemo .page_container .form_wrapper {
+  margin-top: 92px;
+  margin-bottom: 92px;
+  padding-left: 90px;
+  padding-right: 90px;
+}
+@media (max-width: 750px) {
+  #RequestDemo .page_container .form_wrapper {
+    margin-top: 52px;
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+}
+#RequestDemo .page_container .form_wrapper .form_header {
+  font-size: 64px;
+  margin-bottom: 80px;
+}
+@media (max-width: 750px) {
+  #RequestDemo .page_container .form_wrapper .form_header {
+    font-size: 40px;
+  }
+}
+#RequestDemo .page_container .form_wrapper .form_field_list .form_field_list_item {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  margin-bottom: 40px;
+}
+@media (max-width: 750px) {
+  #RequestDemo .page_container .form_wrapper .form_field_list .form_field_list_item {
+    display: block;
+    margin-bottom: 20px;
+  }
+  #RequestDemo .page_container .form_wrapper .form_field_list .form_field_list_item label {
+    display: block;
+  }
+  #RequestDemo .page_container .form_wrapper .form_field_list .form_field_list_item input:not([type=range]),
+  #RequestDemo .page_container .form_wrapper .form_field_list .form_field_list_item textarea,
+  #RequestDemo .page_container .form_wrapper .form_field_list .form_field_list_item .drop_model {
+    width: 100% !important;
+    max-width: 100% !important;
+  }
+}
+#RequestDemo .page_container .form_wrapper .form_field_list .form_field_list_item label {
+  font-size: 28px;
+  font-weight: normal;
+}
+@media (max-width: 750px) {
+  #RequestDemo .page_container .form_wrapper .form_field_list .form_field_list_item label {
+    font-size: 18px;
+  }
+}
+#RequestDemo .page_container .form_wrapper .form_field_list .form_field_list_item input {
+  font-size: 22px;
+  background: #363636;
+  border: none;
+  outline: none;
+  padding: 4px 18px;
+  width: 100%;
+  max-width: 366.5px;
+  font-weight: normal;
+}
+@media (max-width: 750px) {
+  #RequestDemo .page_container .form_wrapper .form_field_list .form_field_list_item input {
+    font-size: 16px;
+  }
+}
+#RequestDemo .page_container .form_wrapper .form_field_list .form_field_list_item input::-moz-placeholder {
+  color: rgba(255, 255, 255, 0.5);
+}
+#RequestDemo .page_container .form_wrapper .form_field_list .form_field_list_item input::placeholder {
+  color: rgba(255, 255, 255, 0.5);
+}
+#RequestDemo .page_container .form_wrapper .form_field_list .form_field_list_item .drop_model {
+  width: 366.5px;
+  height: 249px;
+  border: 5px dashed #fff;
+  border-radius: 8px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #747474;
+  font-size: 28px;
+  cursor: grabbing;
+}
+#RequestDemo .page_container .form_wrapper .form_field_list .form_field_list_item .drop_model input {
+  width: auto;
+}
+#RequestDemo .page_container .form_wrapper .form_field_list .form_field_list_item textarea {
+  width: 100%;
+  max-width: 366.5px;
+  height: 200px;
+  font-size: 22px;
+  background: #363636;
+  border: none;
+  outline: none;
+  padding: 4px 18px;
+  resize: none;
+}
+@media (max-width: 750px) {
+  #RequestDemo .page_container .form_wrapper .form_field_list .form_field_list_item textarea {
+    font-size: 16px;
+  }
+}
+#RequestDemo .page_container .form_wrapper .form_field_list .form_field_list_item textarea:focus {
+  border: none;
+  outline: none;
+}
+#RequestDemo .page_container .form_wrapper .btn_wrapper {
+  text-align: center;
+}
+#RequestDemo .page_container .form_wrapper .btn_action {
+  font-size: 15px;
+  border-radius: 52px;
+  width: 184px;
+  margin: auto;
+  background: var(--btn-bg);
+  border: none;
+  outline: none;
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  padding: 12px;
+  font-weight: bold;
+  margin-right: 109px;
+}
+#RequestDemo .page_container .form_wrapper .btn_action:last-child {
+  margin-right: 0px;
+}/*# sourceMappingURL=RequestDemo.css.map */
