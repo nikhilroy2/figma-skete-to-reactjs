@@ -35,10 +35,10 @@ function ProfilePage(props) {
                             </label>
                             {/* <input type="text" placeholder='' /> */}
                             <div className="form_confirm_box">
-                                <button className="confirm_btn" style={{ '--bg': "#9075FF" }}>
+                                <button className="confirm_btn animate_btn" style={{ '--bg': "#9075FF" }}>
                                     Sure
                                 </button>
-                                <button className="confirm_btn" style={{ '--bg': '#1F1F1F' }}>
+                                <button className="confirm_btn animate_btn" style={{ '--bg': '#1F1F1F' }}>
                                     Not sure
                                 </button>
                             </div>
@@ -50,7 +50,7 @@ function ProfilePage(props) {
                     </ul>
 
                     <div className="btn_wrapper">
-                        <button className="btn_action" style={{ '--btn-bg': '#C73C3C' }}>
+                        <button className="btn_action animate_btn" style={{ '--btn-bg': '#C73C3C' }}>
                             Submit
                         </button>
                     </div>

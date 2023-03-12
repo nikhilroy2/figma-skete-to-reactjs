@@ -38,20 +38,20 @@ function MyProjects(props) {
                                     <td>253/1000 (25.3%)</td>
                                     <td>20:32 UTC 27th Mar</td>
                                     <td>
-                                        <button className="table_action_btn" style={{ '--bg': '#C73C3C' }}>Withdraw</button>
+                                        <button className="table_action_btn animate_btn" style={{ '--bg': '#C73C3C' }}>Withdraw</button>
                                     </td>
                                     <td>
-                                        <button className="table_action_btn" style={{ '--bg': '#F6851B' }}>
+                                        <button className="table_action_btn animate_btn" style={{ '--bg': '#F6851B' }}>
                                             Launched
                                         </button>
                                     </td>
                                     <td>
-                                        <button className="table_action_btn" style={{ '--bg': '#0AA56D', width: '131px' }}>
+                                        <button className="table_action_btn animate_btn" style={{ '--bg': '#0AA56D', width: '131px' }}>
                                             Get a Ownership
                                         </button>
                                     </td>
                                     <td>
-                                        <button className="table_action_btn" style={{ '--bg': '#9075FF', width: '131px' }}>
+                                        <button className="table_action_btn animate_btn" style={{ '--bg': '#9075FF', width: '131px' }}>
                                             View
                                         </button>
                                     </td>

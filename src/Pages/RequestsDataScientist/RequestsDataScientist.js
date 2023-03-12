@@ -31,10 +31,10 @@ function RequestsDataScientist(props) {
                                 <td>0639 ... 51437</td>
                                 <td>0xfe49 ... C457</td>
                                 <td>
-                                    <button className="table_action_btn" style={{ '--bg': '#F6851B' }}>View</button>
+                                    <button className="table_action_btn animate_btn" style={{ '--bg': '#F6851B' }}>View</button>
                                 </td>
                                 <td>
-                                    <button className="table_action_btn" style={{ '--bg': '#0AA56D' }}>
+                                    <button className="table_action_btn animate_btn" style={{ '--bg': '#0AA56D' }}>
                                         Accept
                                     </button>
                                 </td>
@@ -47,10 +47,10 @@ function RequestsDataScientist(props) {
                                 <td>0639 ... 51437</td>
                                 <td>0xfe49 ... C457</td>
                                 <td>
-                                    <button className="table_action_btn" style={{ '--bg': '#F6851B' }}>View</button>
+                                    <button className="table_action_btn animate_btn" style={{ '--bg': '#F6851B' }}>View</button>
                                 </td>
                                 <td>
-                                    <button className="table_action_btn" style={{ '--bg': '#0AA56D' }}>
+                                    <button className="table_action_btn animate_btn" style={{ '--bg': '#0AA56D' }}>
                                         Accept
                                     </button>
                                 </td>
@@ -63,10 +63,10 @@ function RequestsDataScientist(props) {
                                 <td>0639 ... 51437</td>
                                 <td>0xfe49 ... C457</td>
                                 <td>
-                                    <button className="table_action_btn" style={{ '--bg': '#F6851B' }}>View</button>
+                                    <button className="table_action_btn animate_btn" style={{ '--bg': '#F6851B' }}>View</button>
                                 </td>
                                 <td>
-                                    <button className="table_action_btn" style={{ '--bg': '#0AA56D' }}>
+                                    <button className="table_action_btn animate_btn" style={{ '--bg': '#0AA56D' }}>
                                         Accept
                                     </button>
                                 </td>
@@ -79,10 +79,10 @@ function RequestsDataScientist(props) {
                                 <td>0639 ... 51437</td>
                                 <td>0xfe49 ... C457</td>
                                 <td>
-                                    <button className="table_action_btn" style={{ '--bg': '#F6851B' }}>View</button>
+                                    <button className="table_action_btn animate_btn" style={{ '--bg': '#F6851B' }}>View</button>
                                 </td>
                                 <td>
-                                    <button className="table_action_btn" style={{ '--bg': '#0AA56D' }}>
+                                    <button className="table_action_btn animate_btn" style={{ '--bg': '#0AA56D' }}>
                                         Accept
                                     </button>
                                 </td>
@@ -95,10 +95,10 @@ function RequestsDataScientist(props) {
                                 <td>0639 ... 51437</td>
                                 <td>0xfe49 ... C457</td>
                                 <td>
-                                    <button className="table_action_btn" style={{ '--bg': '#F6851B' }}>View</button>
+                                    <button className="table_action_btn animate_btn" style={{ '--bg': '#F6851B' }}>View</button>
                                 </td>
                                 <td>
-                                    <button className="table_action_btn" style={{ '--bg': '#0AA56D' }}>
+                                    <button className="table_action_btn animate_btn" style={{ '--bg': '#0AA56D' }}>
                                         Accept
                                     </button>
                                 </td>
@@ -111,10 +111,10 @@ function RequestsDataScientist(props) {
                                 <td>0639 ... 51437</td>
                                 <td>0xfe49 ... C457</td>
                                 <td>
-                                    <button className="table_action_btn" style={{ '--bg': '#F6851B' }}>View</button>
+                                    <button className="table_action_btn animate_btn" style={{ '--bg': '#F6851B' }}>View</button>
                                 </td>
                                 <td>
-                                    <button className="table_action_btn" style={{ '--bg': '#0AA56D' }}>
+                                    <button className="table_action_btn animate_btn" style={{ '--bg': '#0AA56D' }}>
                                         Accept
                                     </button>
                                 </td>
@@ -127,10 +127,10 @@ function RequestsDataScientist(props) {
                                 <td>0639 ... 51437</td>
                                 <td>0xfe49 ... C457</td>
                                 <td>
-                                    <button className="table_action_btn" style={{ '--bg': '#F6851B' }}>View</button>
+                                    <button className="table_action_btn animate_btn" style={{ '--bg': '#F6851B' }}>View</button>
                                 </td>
                                 <td>
-                                    <button className="table_action_btn" style={{ '--bg': '#0AA56D' }}>
+                                    <button className="table_action_btn animate_btn" style={{ '--bg': '#0AA56D' }}>
                                         Accept
                                     </button>
                                 </td>
@@ -143,10 +143,10 @@ function RequestsDataScientist(props) {
                                 <td>0639 ... 51437</td>
                                 <td>0xfe49 ... C457</td>
                                 <td>
-                                    <button className="table_action_btn" style={{ '--bg': '#F6851B' }}>View</button>
+                                    <button className="table_action_btn animate_btn" style={{ '--bg': '#F6851B' }}>View</button>
                                 </td>
                                 <td>
-                                    <button className="table_action_btn" style={{ '--bg': '#0AA56D' }}>
+                                    <button className="table_action_btn animate_btn" style={{ '--bg': '#0AA56D' }}>
                                         Accept
                                     </button>
                                 </td>
@@ -159,10 +159,10 @@ function RequestsDataScientist(props) {
                                 <td>0639 ... 51437</td>
                                 <td>0xfe49 ... C457</td>
                                 <td>
-                                    <button className="table_action_btn" style={{ '--bg': '#F6851B' }}>View</button>
+                                    <button className="table_action_btn animate_btn" style={{ '--bg': '#F6851B' }}>View</button>
                                 </td>
                                 <td>
-                                    <button className="table_action_btn" style={{ '--bg': '#0AA56D' }}>
+                                    <button className="table_action_btn animate_btn" style={{ '--bg': '#0AA56D' }}>
                                         Accept
                                     </button>
                                 </td>
@@ -175,10 +175,10 @@ function RequestsDataScientist(props) {
                                 <td>0639 ... 51437</td>
                                 <td>0xfe49 ... C457</td>
                                 <td>
-                                    <button className="table_action_btn" style={{ '--bg': '#F6851B' }}>View</button>
+                                    <button className="table_action_btn animate_btn" style={{ '--bg': '#F6851B' }}>View</button>
                                 </td>
                                 <td>
-                                    <button className="table_action_btn" style={{ '--bg': '#0AA56D' }}>
+                                    <button className="table_action_btn animate_btn" style={{ '--bg': '#0AA56D' }}>
                                         Accept
                                     </button>
                                 </td>
@@ -191,10 +191,10 @@ function RequestsDataScientist(props) {
                                 <td>0639 ... 51437</td>
                                 <td>0xfe49 ... C457</td>
                                 <td>
-                                    <button className="table_action_btn" style={{ '--bg': '#F6851B' }}>View</button>
+                                    <button className="table_action_btn animate_btn" style={{ '--bg': '#F6851B' }}>View</button>
                                 </td>
                                 <td>
-                                    <button className="table_action_btn" style={{ '--bg': '#0AA56D' }}>
+                                    <button className="table_action_btn animate_btn" style={{ '--bg': '#0AA56D' }}>
                                         Accept
                                     </button>
                                 </td>
@@ -207,10 +207,10 @@ function RequestsDataScientist(props) {
                                 <td>0639 ... 51437</td>
                                 <td>0xfe49 ... C457</td>
                                 <td>
-                                    <button className="table_action_btn" style={{ '--bg': '#F6851B' }}>View</button>
+                                    <button className="table_action_btn animate_btn" style={{ '--bg': '#F6851B' }}>View</button>
                                 </td>
                                 <td>
-                                    <button className="table_action_btn" style={{ '--bg': '#0AA56D' }}>
+                                    <button className="table_action_btn animate_btn" style={{ '--bg': '#0AA56D' }}>
                                         Accept
                                     </button>
                                 </td>
@@ -223,10 +223,10 @@ function RequestsDataScientist(props) {
                                 <td>0639 ... 51437</td>
                                 <td>0xfe49 ... C457</td>
                                 <td>
-                                    <button className="table_action_btn" style={{ '--bg': '#F6851B' }}>View</button>
+                                    <button className="table_action_btn animate_btn" style={{ '--bg': '#F6851B' }}>View</button>
                                 </td>
                                 <td>
-                                    <button className="table_action_btn" style={{ '--bg': '#0AA56D' }}>
+                                    <button className="table_action_btn animate_btn" style={{ '--bg': '#0AA56D' }}>
                                         Accept
                                     </button>
                                 </td>
@@ -239,10 +239,10 @@ function RequestsDataScientist(props) {
                                 <td>0639 ... 51437</td>
                                 <td>0xfe49 ... C457</td>
                                 <td>
-                                    <button className="table_action_btn" style={{ '--bg': '#F6851B' }}>View</button>
+                                    <button className="table_action_btn animate_btn" style={{ '--bg': '#F6851B' }}>View</button>
                                 </td>
                                 <td>
-                                    <button className="table_action_btn" style={{ '--bg': '#0AA56D' }}>
+                                    <button className="table_action_btn animate_btn" style={{ '--bg': '#0AA56D' }}>
                                         Accept
                                     </button>
                                 </td>
@@ -255,10 +255,10 @@ function RequestsDataScientist(props) {
                                 <td>0639 ... 51437</td>
                                 <td>0xfe49 ... C457</td>
                                 <td>
-                                    <button className="table_action_btn" style={{ '--bg': '#F6851B' }}>View</button>
+                                    <button className="table_action_btn animate_btn" style={{ '--bg': '#F6851B' }}>View</button>
                                 </td>
                                 <td>
-                                    <button className="table_action_btn" style={{ '--bg': '#0AA56D' }}>
+                                    <button className="table_action_btn animate_btn" style={{ '--bg': '#0AA56D' }}>
                                         Accept
                                     </button>
                                 </td>

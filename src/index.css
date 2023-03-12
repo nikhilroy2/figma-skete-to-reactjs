@@ -17,3 +17,18 @@ font-family: 'Outfit', sans-serif;
     font-size: 40px;
   }
 }
+
+.animate_btn:hover{
+  animation: .5s ease animate_btn ;
+}
+@keyframes animate_btn {
+  0%{
+    transform: scale(1);
+  } 
+  50%{
+    transform: scale(1.2);
+  }
+  100%{
+    transform: scale(1);
+  }
+}

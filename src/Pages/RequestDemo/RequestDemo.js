@@ -100,7 +100,7 @@ function RequestDemo(props) {
                     </ul>
 
                     <div className="btn_wrapper">
-                        <button className="btn_action" style={{ '--btn-bg': '#C73C3C' }}>
+                        <button className="btn_action animate_btn" style={{ '--btn-bg': '#C73C3C' }}>
                             Submit
                         </button>
                     </div>

@@ -6,7 +6,7 @@ function CreateMarket(props) {
             <div className="page_container">
                 <div className="action_wrapper">
                     <h2>Create  a market for your models</h2>
-                    <button className="btn_action" style={{ '--btn-bg': '#E2761B' }}>
+                    <button className="btn_action animate_btn" style={{ '--btn-bg': '#E2761B' }}>
                         Request a demo
                     </button>
                 </div>

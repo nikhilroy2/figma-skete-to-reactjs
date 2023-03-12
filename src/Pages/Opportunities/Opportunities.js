@@ -11,7 +11,7 @@ function Opportunities(props) {
                 {
                     id: 1,
                     bg: '#C73C3C',
-                    img: require('../../images/logo-frenchfry.png'),
+                    img: require('../../images/invest_icon/invest_icon_1.png'),
                     subway: 888,
                     tiex: '5.2 TIEX',
                     invest_counter: 134
@@ -19,7 +19,7 @@ function Opportunities(props) {
                 {
                     id: 2,
                     bg: '#9075FF',
-                    img: require('../../images/logo-frenchfry.png'),
+                    img: require('../../images/invest_icon/invest_icon_2.png'),
                     subway: 888,
                     tiex: '5.2 TIEX',
                     invest_counter: 134
@@ -27,7 +27,7 @@ function Opportunities(props) {
                 {
                     id: 3,
                     bg: '#C73C3C',
-                    img: require('../../images/logo-frenchfry.png'),
+                    img: require('../../images/invest_icon/invest_icon_1.png'),
                     subway: 888,
                     tiex: '5.2 TIEX',
                     invest_counter: 134
@@ -35,7 +35,7 @@ function Opportunities(props) {
                 {
                     id: 4,
                     bg: '#9075FF',
-                    img: require('../../images/logo-frenchfry.png'),
+                    img: require('../../images/invest_icon/invest_icon_2.png'),
                     subway: 888,
                     tiex: '5.2 TIEX',
                     invest_counter: 134
@@ -43,7 +43,7 @@ function Opportunities(props) {
                 {
                     id: 5,
                     bg: '#0AA56D',
-                    img: require('../../images/logo-frenchfry.png'),
+                    img: require('../../images/invest_icon/invest_icon_4.png'),
                     subway: 888,
                     tiex: '5.2 TIEX',
                     invest_counter: 134
@@ -51,7 +51,7 @@ function Opportunities(props) {
                 {
                     id: 6,
                     bg: '#8A8A8A',
-                    img: require('../../images/nft_logo.png'),
+                    img: require('../../images/invest_icon/invest_icon_5.png'),
                     subway: 888,
                     tiex: '5.2 TIEX',
                     invest_counter: 134
@@ -59,7 +59,7 @@ function Opportunities(props) {
                 {
                     id: 7,
                     bg: '#7C3E1A',
-                    img: require('../../images/blockchain_logo.png'),
+                    img: require('../../images/invest_icon/invest_icon_6.png'),
                     subway: 888,
                     tiex: '5.2 TIEX',
                     invest_counter: 134
@@ -67,7 +67,7 @@ function Opportunities(props) {
                 {
                     id: 8,
                     bg: '#546A25',
-                    img: require('../../images/metamask.png'),
+                    img: require('../../images/invest_icon/invest_icon_7.png'),
                     subway: 888,
                     tiex: '5.2 TIEX',
                     invest_counter: 134
@@ -82,7 +82,7 @@ function Opportunities(props) {
                 {
                     id: 1,
                     bg: '#161616',
-                    img: require('../../images/polygon.png'),
+                    img: require('../../images/invest_icon/invest_icon_8.png'),
                     subway: 888,
                     tiex: '5.2 TIEX',
                     invest_counter: 134
@@ -90,7 +90,7 @@ function Opportunities(props) {
                 {
                     id: 2,
                     bg: '#014B2C',
-                    img: require('../../images/base.png'),
+                    img: require('../../images/invest_icon/invest_icon_9.png'),
                     subway: 888,
                     tiex: '5.2 TIEX',
                     invest_counter: 134
@@ -98,7 +98,7 @@ function Opportunities(props) {
                 {
                     id: 3,
                     bg: '#0AA56D',
-                    img: require('../../images/img_51.png'),
+                    img: require('../../images/invest_icon/invest_icon_13.png'),
                     subway: 888,
                     tiex: '5.2 TIEX',
                     invest_counter: 134
@@ -113,7 +113,7 @@ function Opportunities(props) {
                 {
                     id: 1,
                     bg: '#161616',
-                    img: require('../../images/Protocol.png'),
+                    img: require('../../images/invest_icon/invest_icon_11.png'),
                     subway: 888,
                     tiex: '5.2 TIEX',
                     invest_counter: 134
@@ -121,7 +121,7 @@ function Opportunities(props) {
                 {
                     id: 2,
                     bg: '#014B2C',
-                    img: require('../../images/base.png'),
+                    img: require('../../images/invest_icon/invest_icon_12.png'),
                     subway: 888,
                     tiex: '5.2 TIEX',
                     invest_counter: 134
@@ -129,7 +129,7 @@ function Opportunities(props) {
                 {
                     id: 3,
                     bg: '#0AA56D',
-                    img: require('../../images/img_51.png'),
+                    img: require('../../images/invest_icon/invest_icon_13.png'),
                     subway: 888,
                     tiex: '5.2 TIEX',
                     invest_counter: 134
@@ -226,7 +226,7 @@ const InvestCard = ({ j }) => {
                 </ul>
             </div>
             <div className="invest_card_footer">
-                <button className="invest_btn">
+                <button className="invest_btn animate_btn">
                     Invest
                 </button>
             </div>

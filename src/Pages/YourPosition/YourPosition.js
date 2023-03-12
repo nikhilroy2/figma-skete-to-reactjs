@@ -8,13 +8,13 @@ function YourPosition(props) {
                     <h2>Choose your position</h2>
                     <div className="btn_wrapper">
                         <h3 className="btn_title">I’m ...</h3>
-                        <button className="btn_action" style={{ '--btn-bg': '#E2761B' }}>
+                        <button className="btn_action animate_btn" style={{ '--btn-bg': '#E2761B' }}>
                             TIEX Admin
                         </button>
-                        <button className="btn_action" style={{ '--btn-bg': '#C73C3C' }}>
+                        <button className="btn_action animate_btn" style={{ '--btn-bg': '#C73C3C' }}>
                             Data Scientist
                         </button>
-                        <button className="btn_action" style={{ '--btn-bg': '#2099DF' }}>
+                        <button className="btn_action animate_btn" style={{ '--btn-bg': '#2099DF' }}>
                             Investor
                         </button>
                     </div>

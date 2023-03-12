@@ -11,7 +11,7 @@ function MyAssets(props) {
                 {
                     id: 1,
                     bg: '#C73C3C',
-                    img: require('../../images/logo-frenchfry.png'),
+                    img: require('../../images/invest_icon/invest_icon_1.png'),
                     subway: 1254,
                     tiex: '5.2 TIEX',
                     invest_counter: 134
@@ -19,7 +19,7 @@ function MyAssets(props) {
                 {
                     id: 2,
                     bg: '#C73C3C',
-                    img: require('../../images/logo-frenchfry.png'),
+                    img: require('../../images/invest_icon/invest_icon_1.png'),
                     subway: 1254,
                     tiex: '5.2 TIEX',
                     invest_counter: 134
@@ -27,7 +27,7 @@ function MyAssets(props) {
                 {
                     id: 3,
                     bg: '#C73C3C',
-                    img: require('../../images/logo-frenchfry.png'),
+                    img: require('../../images/invest_icon/invest_icon_1.png'),
                     subway: 1254,
                     tiex: '5.2 TIEX',
                     invest_counter: 134
@@ -35,7 +35,7 @@ function MyAssets(props) {
                 {
                     id: 4,
                     bg: '#C73C3C',
-                    img: require('../../images/logo-frenchfry.png'),
+                    img: require('../../images/invest_icon/invest_icon_1.png'),
                     subway: 1254,
                     tiex: '5.2 TIEX',
                     invest_counter: 134
@@ -43,7 +43,7 @@ function MyAssets(props) {
                 {
                     id: 5,
                     bg: '#C73C3C',
-                    img: require('../../images/logo-frenchfry.png'),
+                    img: require('../../images/invest_icon/invest_icon_1.png'),
                     subway: 1254,
                     tiex: '5.2 TIEX',
                     invest_counter: 134
@@ -51,7 +51,7 @@ function MyAssets(props) {
                 {
                     id: 6,
                     bg: '#C73C3C',
-                    img: require('../../images/logo-frenchfry.png'),
+                    img: require('../../images/invest_icon/invest_icon_1.png'),
                     subway: 1254,
                     tiex: '5.2 TIEX',
                     invest_counter: 134
@@ -59,7 +59,7 @@ function MyAssets(props) {
                 {
                     id: 7,
                     bg: '#C73C3C',
-                    img: require('../../images/logo-frenchfry.png'),
+                    img: require('../../images/invest_icon/invest_icon_1.png'),
                     subway: 1254,
                     tiex: '5.2 TIEX',
                     invest_counter: 134
@@ -67,7 +67,7 @@ function MyAssets(props) {
                 {
                     id: 8,
                     bg: '#C73C3C',
-                    img: require('../../images/logo-frenchfry.png'),
+                    img: require('../../images/invest_icon/invest_icon_1.png'),
                     subway: 1254,
                     tiex: '5.2 TIEX',
                     invest_counter: 134
@@ -146,10 +146,10 @@ const InvestCard = ({ j }) => {
                 </ul>
             </div>
             <div className="invest_card_footer">
-                <button className="invest_btn">
+                <button className="invest_btn animate_btn">
                     View
                 </button>
-                <button className="invest_btn">
+                <button className="invest_btn animate_btn">
                     Transer
                 </button>
             </div>
