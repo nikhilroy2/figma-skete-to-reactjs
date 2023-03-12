@@ -172,7 +172,7 @@ function Page1(props) {
                             <aside>
                                 <div className="invest_card">
                                     <div className="invest_card_header" style={{'--header-bg': '#0AA56D'}}>
-                                        <img src={require('../../images/logo-frenchfry.png')} alt="img" />
+                                        <img src={require('../../images/invest_icon/invest_icon_4.png')} alt="img" />
                                     </div>
                                     <div className="invest_card_body">
                                         <ul>

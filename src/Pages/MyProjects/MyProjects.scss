@@ -1,10 +1,13 @@
 #MyProjects {
     .page_container {
-        max-width: 1590px;
+        max-width: 1550px;
         margin: auto;
         margin-top: 92px;
         margin-bottom: 92px;
-
+        @media (max-width: 1550px){
+            padding-left: 20px;
+            padding-right: 20px;
+        }
         * {
             color: #fff;
             font-weight: bold;
@@ -20,7 +23,7 @@
 
         .section_header {
             font-size: 50px;
-            text-align: center;
+            text-align: left;
             margin-bottom: 67px;
 
             @media (max-width: 760px) {
@@ -35,7 +38,7 @@
         }
 
         .table_wrapper {
-            width: 1450px;
+            width: 100%;
             overflow: auto;
 
             table {

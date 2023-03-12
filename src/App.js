@@ -20,15 +20,13 @@ import RequestsDataScientist from './Pages/RequestsDataScientist/RequestsDataSci
 import MyProjects from './Pages/MyProjects/MyProjects';
 import ProfilePage from './Pages/ProfilePage/ProfilePage';
 import SignIn from './Pages/SignIn/SignIn';
-
+import PageList from './Pages/PageList/PageList';
 function App() {
 
   return (
     <div className="App">
       <BrowserRouter>
-        <Routes>
-          <Route path="/" element={<HomePage></HomePage>}></Route>
-        </Routes>
+       
         <Routes>
           <Route path="/page1" element={<Page1></Page1>}></Route>
         </Routes>
@@ -64,6 +62,12 @@ function App() {
         </Routes>
         <Routes>
           <Route path="/signin" element={<SignIn></SignIn>}></Route>
+        </Routes>
+        <Routes>
+          <Route path="/page_list" element={<PageList></PageList>}></Route>
+        </Routes>
+        <Routes>
+          <Route path="/"  element={<HomePage></HomePage>}></Route>
         </Routes>
       </BrowserRouter>
     </div>

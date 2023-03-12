@@ -42,4 +42,7 @@
     <li>
         <a href="https://figmato-reactjs-converting-pages.netlify.app/signin">https://figmato-reactjs-converting-pages.netlify.app/signin</a>
     </li>
+    <li>
+        <a href="https://figmato-reactjs-converting-pages.netlify.app/page_list">https://figmato-reactjs-converting-pages.netlify.app/page_list</a>
+    </li>
 </ol>

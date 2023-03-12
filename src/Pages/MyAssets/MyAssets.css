@@ -87,7 +87,7 @@
 }
 #MyAssets .page_container .card_row .invest_card {
   background: #343434;
-  border-radius: 4px;
+  border-radius: 5px 5px 4px 4px;
   overflow: hidden;
   margin-bottom: 58px;
   margin-right: 58px;
