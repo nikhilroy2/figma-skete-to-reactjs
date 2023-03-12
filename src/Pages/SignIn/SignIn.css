@@ -21,13 +21,23 @@
   align-items: center;
   border: none;
   outline: none;
-  width: 100%;
   width: 592px;
   height: 150px;
   font-size: 32px;
   background: #27761A;
   border-radius: 15px;
   font-weight: bold;
+  white-space: nowrap;
+}
+@media (max-width: 650px) {
+  #SignIn .page_container .sign_in_btn {
+    width: 100%;
+    padding: 0px 20px;
+    height: 100px;
+  }
+  #SignIn .page_container .sign_in_btn img {
+    margin-right: 15px !important;
+  }
 }
 #SignIn .page_container .sign_in_btn img {
   margin-right: 36px;
