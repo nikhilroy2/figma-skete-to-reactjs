@@ -1,4 +1,9 @@
 /* ...........global classes......... */
-.page_header{
-    font-size: 64px;
+.page_header {
+  font-size: 64px;
+}
+@media (max-width: 700px) {
+  .page_header {
+    font-size: 40px;
+  }
 }

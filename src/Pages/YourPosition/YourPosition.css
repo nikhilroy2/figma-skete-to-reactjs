@@ -24,6 +24,12 @@
   font-size: 50px;
   margin-bottom: 124px;
 }
+@media (max-width: 700px) {
+  #YourPosition .page_container .action_wrapper h2 {
+    font-size: 30px;
+    margin-bottom: 80px;
+  }
+}
 #YourPosition .page_container .action_wrapper .btn_title {
   margin-bottom: 28px;
   font-size: 28px;
@@ -45,6 +51,12 @@
   padding: 12px;
   font-weight: bold;
   margin-right: 109px;
+}
+@media (max-width: 700px) {
+  #YourPosition .page_container .action_wrapper .btn_action {
+    margin-right: 0px;
+    margin-bottom: 15px;
+  }
 }
 #YourPosition .page_container .action_wrapper .btn_action:last-child {
   margin-right: 0px;

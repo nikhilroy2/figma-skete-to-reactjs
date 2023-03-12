@@ -3,6 +3,12 @@
   margin: auto;
   margin-top: 82px;
 }
+@media (max-width: 1000px) {
+  #Opportunities .page_container {
+    padding-left: 25px;
+    padding-right: 25px;
+  }
+}
 #Opportunities .page_container * {
   color: #fff;
 }
@@ -24,9 +30,19 @@
   font-size: 34px;
   margin-bottom: 58px;
 }
+@media (max-width: 700px) {
+  #Opportunities .page_container .page_sub_header {
+    font-size: 25px;
+  }
+}
 #Opportunities .page_container .page_sub_header .counter {
   font-size: 27px;
   color: #707070;
+}
+@media (max-width: 700px) {
+  #Opportunities .page_container .page_sub_header .counter {
+    font-size: 20px;
+  }
 }
 #Opportunities .page_container .card_row {
   display: flex;

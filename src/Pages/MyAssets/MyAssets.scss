@@ -4,6 +4,11 @@
         margin: auto;
         margin-top: 82px;
 
+        @media (max-width: 1000px) {
+            padding-left: 25px;
+            padding-right: 25px;
+        }
+
         * {
             color: #fff;
         }
@@ -22,12 +27,20 @@
                 color: #5F5F5F;
                 vertical-align: bottom;
                 margin-left: 8px;
+
+                @media (max-width: 700px) {
+                    font-size: 20px;
+                }
             }
         }
 
         .page_sub_header {
             font-size: 34px;
             margin-bottom: 58px;
+
+            @media (max-width: 700px) {
+                font-size: 25px;
+            }
 
             .header_row {
                 display: flex;
@@ -42,12 +55,20 @@
                         font-size: 21px;
                         display: block;
                         text-align: right;
+
+                        @media (max-width: 700px) {
+                            font-size: 15px;
+                        }
                     }
 
                     strong {
                         display: block;
                         text-align: right;
                         font-size: 29px;
+
+                        @media (max-width: 700px) {
+                            font-size: 18px;
+                        }
                     }
                 }
             }

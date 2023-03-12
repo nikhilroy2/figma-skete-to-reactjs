@@ -3,7 +3,10 @@
         max-width: 1287px;
         margin: auto;
         margin-top: 82px;
-
+        @media (max-width: 1000px) {
+            padding-left: 25px;
+            padding-right: 25px;
+        }
         * {
             color: #fff;
         }
@@ -28,10 +31,18 @@
         .page_sub_header {
             font-size: 34px;
             margin-bottom: 58px;
+
+            @media (max-width: 700px) {
+                font-size: 25px;
+            }
+
             .counter {
                 font-size: 27px;
                 color: #707070;
 
+                @media (max-width: 700px) {
+                    font-size: 20px;
+                }
             }
         }
 
@@ -39,10 +50,12 @@
             display: flex;
             flex-flow: row wrap;
             margin-bottom: 84px;
+
             // invest card css
-            @media (max-width: 1290px){
+            @media (max-width: 1290px) {
                 justify-content: space-around;
             }
+
             .invest_card {
                 background: #343434;
                 border-radius: 4px;
@@ -50,12 +63,15 @@
                 margin-bottom: 58px;
                 margin-right: 58px;
                 width: 274px;
-                @media (max-width: 1290px){
+
+                @media (max-width: 1290px) {
                     margin-right: 0px;
                 }
-                &:nth-child(4n){
+
+                &:nth-child(4n) {
                     margin-right: 0px;
                 }
+
                 .invest_card_header {
                     height: 199px;
                     background: var(--header-bg);

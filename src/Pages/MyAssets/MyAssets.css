@@ -3,6 +3,12 @@
   margin: auto;
   margin-top: 82px;
 }
+@media (max-width: 1000px) {
+  #MyAssets .page_container {
+    padding-left: 25px;
+    padding-right: 25px;
+  }
+}
 #MyAssets .page_container * {
   color: #fff;
 }
@@ -20,9 +26,19 @@
   vertical-align: bottom;
   margin-left: 8px;
 }
+@media (max-width: 700px) {
+  #MyAssets .page_container .page_header .counter {
+    font-size: 20px;
+  }
+}
 #MyAssets .page_container .page_sub_header {
   font-size: 34px;
   margin-bottom: 58px;
+}
+@media (max-width: 700px) {
+  #MyAssets .page_container .page_sub_header {
+    font-size: 25px;
+  }
 }
 #MyAssets .page_container .page_sub_header .header_row {
   display: flex;
@@ -38,10 +54,20 @@
   display: block;
   text-align: right;
 }
+@media (max-width: 700px) {
+  #MyAssets .page_container .page_sub_header .header_row .header_balance small {
+    font-size: 15px;
+  }
+}
 #MyAssets .page_container .page_sub_header .header_row .header_balance strong {
   display: block;
   text-align: right;
   font-size: 29px;
+}
+@media (max-width: 700px) {
+  #MyAssets .page_container .page_sub_header .header_row .header_balance strong {
+    font-size: 18px;
+  }
 }
 #MyAssets .page_container .page_sub_header .counter {
   font-size: 27px;

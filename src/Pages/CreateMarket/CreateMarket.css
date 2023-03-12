@@ -24,6 +24,12 @@
   font-size: 50px;
   margin-bottom: 124px;
 }
+@media (max-width: 700px) {
+  #CreateMarket .page_container .action_wrapper h2 {
+    font-size: 30px;
+    margin-bottom: 80px;
+  }
+}
 #CreateMarket .page_container .action_wrapper .btn_action {
   font-size: 15px;
   border-radius: 52px;
