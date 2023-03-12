@@ -14,6 +14,7 @@ import MyAssets from './Pages/MyAssets/MyAssets';
 import CreateMarket from './Pages/CreateMarket/CreateMarket';
 import FindOpportunities from './Pages/FindOpportunities/FindOpportunities';
 import YourPosition from './Pages/YourPosition/YourPosition';
+import RequestDemo from './Pages/RequestDemo/RequestDemo';
 
 function App() {
 
@@ -40,6 +41,9 @@ function App() {
         </Routes>
         <Routes>
           <Route path="/your_position" element={<YourPosition></YourPosition>}></Route>
+        </Routes>
+        <Routes>
+          <Route path="/request_demo" element={<RequestDemo></RequestDemo>}></Route>
         </Routes>
       </BrowserRouter>
     </div>
