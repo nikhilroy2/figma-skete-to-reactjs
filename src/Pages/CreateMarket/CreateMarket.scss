@@ -1,5 +1,7 @@
 #CreateMarket {
-    zoom: 75%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
     .page_container {
         max-width: 1287px;
         margin: auto;

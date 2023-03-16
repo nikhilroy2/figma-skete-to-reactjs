@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
-import './MyModels.css';
-function MyModels(props) {
+import './MyShares.css';
+function MyShares(props) {
 
     const invest_card_object = [
         {
@@ -14,7 +14,8 @@ function MyModels(props) {
                     img: require('../../images/invest_icon/invest_icon_1.png'),
                     subway: 1254,
                     tiex: '5.2 TIEX',
-                    invest_counter: 1234
+                    invest_counter: 1234,
+                    aside_text: 'CSPS'
                 },
                 {
                     id: 2,
@@ -22,7 +23,9 @@ function MyModels(props) {
                     img: require('../../images/invest_icon/invest_icon_1.png'),
                     subway: 1254,
                     tiex: '5.2 TIEX',
-                    invest_counter: 1234
+                    invest_counter: 1234,
+                    aside_text: 'VSLP'
+
                 },
                 {
                     id: 3,
@@ -30,7 +33,9 @@ function MyModels(props) {
                     img: require('../../images/invest_icon/invest_icon_1.png'),
                     subway: 1254,
                     tiex: '5.2 TIEX',
-                    invest_counter: 1234
+                    invest_counter: 1234,
+                    aside_text: 'LTG'
+
                 },
                 {
                     id: 4,
@@ -38,7 +43,9 @@ function MyModels(props) {
                     img: require('../../images/invest_icon/invest_icon_1.png'),
                     subway: 1254,
                     tiex: '5.2 TIEX',
-                    invest_counter: 1234
+                    invest_counter: 1234,
+                    aside_text: 'XLM'
+
                 },
                 {
                     id: 5,
@@ -46,7 +53,9 @@ function MyModels(props) {
                     img: require('../../images/invest_icon/invest_icon_1.png'),
                     subway: 1254,
                     tiex: '5.2 TIEX',
-                    invest_counter: 1234
+                    invest_counter: 1234,
+                    aside_text: 'OPO'
+
                 },
                 {
                     id: 6,
@@ -54,7 +63,9 @@ function MyModels(props) {
                     img: require('../../images/invest_icon/invest_icon_1.png'),
                     subway: 1254,
                     tiex: '5.2 TIEX',
-                    invest_counter: 1234
+                    invest_counter: 1234,
+                    aside_text: 'KUS'
+
                 },
                 {
                     id: 7,
@@ -62,7 +73,9 @@ function MyModels(props) {
                     img: require('../../images/invest_icon/invest_icon_1.png'),
                     subway: 1254,
                     tiex: '5.2 TIEX',
-                    invest_counter: 1234
+                    invest_counter: 1234,
+                    aside_text: 'DAP'
+
                 },
                 {
                     id: 8,
@@ -70,7 +83,9 @@ function MyModels(props) {
                     img: require('../../images/invest_icon/invest_icon_1.png'),
                     subway: 1254,
                     tiex: '5.2 TIEX',
-                    invest_counter: 1234
+                    invest_counter: 1234,
+                    aside_text: 'Web3'
+
                 },
             ]
         },
@@ -79,7 +94,7 @@ function MyModels(props) {
     const [isModalOpen, setIsModalOpen] = useState(false);
     console.log(isModalOpen)
     return (
-        <div id='MyModels'>
+        <div id='MyShares'>
             <div className="page_container">
 
                 {/* card */}
@@ -91,13 +106,13 @@ function MyModels(props) {
                                     <div className="header_row">
                                         <div>
                                             <h2 className="page_header">
-                                                My Models<small className="counter">(CNFT)</small>
+                                                My Shares<small className="counter">(CNFT)</small>
                                             </h2>
 
                                         </div>
                                         <div className="header_balance">
                                             <small>Balance</small>
-                                            <strong>32 CNFT</strong>
+                                            <strong>123</strong>
                                         </div>
                                     </div>
                                 </h3>
@@ -151,7 +166,7 @@ function MyModels(props) {
     );
 }
 
-export default MyModels;
+export default MyShares;
 
 
 const InvestCard = ({ j, setIsModalOpen }) => {
@@ -163,6 +178,9 @@ const InvestCard = ({ j, setIsModalOpen }) => {
                 <span className="invest_counter">
                     #{j.invest_counter}
                 </span>
+                <div className="aside_text">
+                    {j.aside_text}
+                </div>
             </div>
             <div className="invest_card_body">
                 <ul>

@@ -52,12 +52,6 @@ function LaunchShare(props) {
                             </label>
                             <input type="text" placeholder='' />
                         </li>
-                        <li className='form_field_list_item'>
-                            <label htmlFor="">
-                                Launch End Time:
-                            </label>
-                            <input type="text" placeholder='' />
-                        </li>
                     </ul>
 
                     <div className="btn_wrapper">

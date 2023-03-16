@@ -1,0 +1,276 @@
+#MyShares {
+  zoom: 75%;
+}
+#MyShares .page_container {
+  max-width: 1287px;
+  margin: auto;
+  margin-top: 162px;
+}
+@media (max-width: 1000px) {
+  #MyShares .page_container {
+    padding-left: 25px;
+    padding-right: 25px;
+    margin-top: 80px;
+  }
+}
+#MyShares .page_container * {
+  color: #fff;
+  font-family: "Inter", sans-serif;
+  font-weight: bold;
+}
+#MyShares .page_container ul,
+#MyShares .page_container ol {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+#MyShares .page_container .page_header {
+  margin-bottom: 0px;
+  font-size: 53px;
+}
+#MyShares .page_container .page_header .counter {
+  font-size: 34px;
+  color: #5F5F5F;
+  vertical-align: bottom;
+  margin-left: 8px;
+}
+@media (max-width: 700px) {
+  #MyShares .page_container .page_header .counter {
+    font-size: 20px;
+  }
+}
+#MyShares .page_container .page_sub_header {
+  font-size: 34px;
+  margin-bottom: 58px;
+}
+@media (max-width: 700px) {
+  #MyShares .page_container .page_sub_header {
+    font-size: 25px;
+  }
+}
+#MyShares .page_container .page_sub_header .header_row {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+#MyShares .page_container .page_sub_header .header_row .header_balance {
+  text-align: right;
+}
+#MyShares .page_container .page_sub_header .header_row .header_balance small {
+  color: #6A6A6A;
+  font-size: 21px;
+  display: block;
+  text-align: right;
+}
+@media (max-width: 700px) {
+  #MyShares .page_container .page_sub_header .header_row .header_balance small {
+    font-size: 15px;
+  }
+}
+#MyShares .page_container .page_sub_header .header_row .header_balance strong {
+  display: block;
+  text-align: right;
+  font-size: 29px;
+}
+@media (max-width: 700px) {
+  #MyShares .page_container .page_sub_header .header_row .header_balance strong {
+    font-size: 18px;
+  }
+}
+#MyShares .page_container .page_sub_header .counter {
+  font-size: 27px;
+  color: #707070;
+}
+#MyShares .page_container .card_row {
+  display: flex;
+  flex-flow: row wrap;
+  margin-bottom: 84px;
+}
+@media (max-width: 1290px) {
+  #MyShares .page_container .card_row {
+    justify-content: space-around;
+  }
+}
+#MyShares .page_container .card_row .invest_card {
+  background: #343434;
+  border-radius: 5px 5px 4px 4px;
+  margin-bottom: 58px;
+  margin-right: 58px;
+  width: 274px;
+}
+@media (max-width: 1290px) {
+  #MyShares .page_container .card_row .invest_card {
+    margin-right: 0px;
+  }
+}
+#MyShares .page_container .card_row .invest_card:nth-child(4n) {
+  margin-right: 0px;
+}
+#MyShares .page_container .card_row .invest_card .invest_card_header {
+  border-radius: 5px 5px 0 0;
+  height: 199px;
+  background: var(--header-bg);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+}
+#MyShares .page_container .card_row .invest_card .invest_card_header .invest_counter {
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  color: #fff;
+  position: absolute;
+  right: -8px;
+  top: 8px;
+  width: 75px;
+  height: 30px;
+  font-size: 18px;
+  background: #27761A;
+}
+#MyShares .page_container .card_row .invest_card .invest_card_header .aside_text {
+  font-size: 18px;
+  font-family: "Outfit", sans-serif;
+  display: inline-flex;
+  position: absolute;
+  left: 0;
+  bottom: -9px;
+  width: 75px;
+  height: 30px;
+  justify-content: center;
+  align-items: center;
+  background: #9075FF;
+  color: #fff;
+}
+#MyShares .page_container .card_row .invest_card .invest_card_body {
+  padding: 17px 23px 13px 28px;
+}
+#MyShares .page_container .card_row .invest_card .invest_card_body li .list_h2 span {
+  display: block;
+  font-size: 23px;
+  font-weight: normal;
+}
+#MyShares .page_container .card_row .invest_card .invest_card_body li .list_h2 strong {
+  font-size: 23px;
+  font-family: "Outfit", sans-serif;
+}
+#MyShares .page_container .card_row .invest_card .invest_card_body li .list_title {
+  width: 100%;
+  font-size: 16px;
+}
+#MyShares .page_container .card_row .invest_card .invest_card_body li .list_desc {
+  font-size: 12px;
+  font-weight: normal;
+  padding: 0;
+  margin: 0px;
+}
+#MyShares .page_container .card_row .invest_card .invest_card_body li .counting_number {
+  font-size: 23px;
+  color: rgba(255, 255, 255, 0.5);
+}
+#MyShares .page_container .card_row .invest_card .invest_card_body li .counter_wrapper button {
+  background: transparent;
+  border: none;
+  outline: none;
+  width: 24.33px;
+  height: 24.33px;
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 100%;
+}
+#MyShares .page_container .card_row .invest_card .invest_card_body li .counter_wrapper .counter_value {
+  margin: 0px 10px;
+  display: inline-block;
+  width: 30px;
+  text-align: center;
+}
+#MyShares .page_container .card_row .invest_card .invest_card_footer {
+  padding: 0 24px;
+  padding-bottom: 15px;
+  display: flex;
+  justify-content: space-between;
+}
+#MyShares .page_container .card_row .invest_card .invest_card_footer .invest_btn {
+  background: #fff;
+  border: none;
+  outline: none;
+  font-size: 15px;
+  color: #000;
+  text-align: center;
+  display: block;
+  width: 100%;
+  border-radius: 52px;
+  padding: 5px;
+  font-weight: bold;
+}
+#MyShares .page_container .card_row .invest_card .invest_card_footer .invest_btn:first-child {
+  margin-right: 19px;
+}
+#MyShares .modal_view {
+  position: fixed;
+  background: rgba(0, 0, 0, 0.8);
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: solid;
+}
+#MyShares .modal_view .modal_body {
+  width: 600px;
+  padding: 30px;
+  border-radius: 5px;
+  background: #1F1F1F;
+  color: #fff;
+  position: relative;
+}
+#MyShares .modal_view .modal_body .close_btn {
+  position: absolute;
+  right: -18px;
+  top: -18px;
+  background: transparent;
+  color: #fff;
+  border: none;
+  outline: none;
+  padding: 5px;
+  border-radius: 100%;
+}
+#MyShares .modal_view .modal_body .close_btn svg {
+  width: 30px;
+  height: 30px;
+  fill: #fff;
+}
+#MyShares .modal_view .modal_body .flex_row {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+#MyShares .modal_view .modal_body .flex_row small {
+  color: rgba(255, 255, 255, 0.5);
+}
+#MyShares .modal_view .modal_body input {
+  background: #363636;
+  border: none;
+  outline: none;
+  padding: 4px 18px;
+  color: white;
+  margin: 20px auto;
+  width: 100%;
+  display: block;
+}
+#MyShares .modal_view .modal_body .send_btn {
+  background: #0AA56D;
+  color: #fff;
+  padding: 3px 8px;
+  border-radius: 4px;
+  width: 180px;
+  display: block;
+  margin: auto;
+  margin-top: 15px;
+  border: none;
+  outline: none;
+}/*# sourceMappingURL=MyShares.css.map */

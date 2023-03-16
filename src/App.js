@@ -23,15 +23,68 @@ import SignIn from './Pages/SignIn/SignIn';
 import PageList from './Pages/PageList/PageList';
 import CreateModels from './Pages/CreateModels/CreateModels';
 import MyModels from './Pages/MyModels/MyModels';
+import SingleModelPage from './Pages/SingleModelPage/SingleModelPage';
+import Dashboard from './Pages/Dashboard/Dashboard';
+import ForInvestor from './Pages/ForInvestor/ForInvestor';
+import MyShares from './Pages/MyShares/MyShares';
+import ForBusinesses from './Pages/ForBusinesses/ForBusinesses';
 function App() {
 
   return (
     <div className="App">
       <BrowserRouter>
+       
         <Routes>
-          <Route path="/" element={<HomePage></HomePage>}></Route>
+          <Route path="/signin" element={<SignIn></SignIn>}></Route>
+        </Routes>
+
+        <Routes>
+          <Route path="/" element={<CreateMarket></CreateMarket>}></Route>
+        </Routes>
+
+
+        <Routes>
+          <Route path="/create_models" element={<CreateModels></CreateModels>}></Route>
+        </Routes>
+
+        <Routes>
+          <Route path="/my_models" element={<MyModels></MyModels>}></Route>
         </Routes>
         <Routes>
+          <Route path="/single_model_page" element={<SingleModelPage></SingleModelPage>}></Route>
+        </Routes>
+
+        <Routes>
+          <Route path="/dashboard" element={<Dashboard></Dashboard>}></Route>
+        </Routes>
+        
+        <Routes>
+          <Route path="/launch_share" element={<LaunchShare></LaunchShare>}></Route>
+        </Routes>
+
+        <Routes>
+          <Route path="/for_investor" element={<ForInvestor></ForInvestor>}></Route>
+        </Routes>
+        <Routes>
+          <Route path="/my_shares" element={<MyShares></MyShares>}></Route>
+        </Routes>
+
+        <Routes>
+          <Route path="/for_businesses" element={<ForBusinesses></ForBusinesses>}></Route>
+        </Routes>
+
+        <Routes>
+          <Route path="/page_list" element={<PageList></PageList>}></Route>
+        </Routes>
+
+
+
+
+
+
+
+
+        {/* <Routes>
           <Route path="/page1" element={<Page1></Page1>}></Route>
         </Routes>
         <Routes>
@@ -52,9 +105,7 @@ function App() {
         <Routes>
           <Route path="/request_demo" element={<RequestDemo></RequestDemo>}></Route>
         </Routes>
-        <Routes>
-          <Route path="/launch_share" element={<LaunchShare></LaunchShare>}></Route>
-        </Routes>
+       
         <Routes>
           <Route path="/request_data_scientist" element={<RequestsDataScientist></RequestsDataScientist>}></Route>
         </Routes>
@@ -63,20 +114,14 @@ function App() {
         </Routes>
         <Routes>
           <Route path="/profile_page" element={<ProfilePage></ProfilePage>}></Route>
-        </Routes>
-        <Routes>
-          <Route path="/signin" element={<SignIn></SignIn>}></Route>
-        </Routes>
-        <Routes>
-          <Route path="/create_models" element={<CreateModels></CreateModels>}></Route>
-        </Routes>
-        <Routes>
-          <Route path="/my_models" element={<MyModels></MyModels>}></Route>
-        </Routes>
+        </Routes> */}
 
-        <Routes>
-          <Route path="/page_list" element={<PageList></PageList>}></Route>
-        </Routes>
+        
+       
+       
+        
+       
+       
       </BrowserRouter>
     </div>
   );

@@ -6,7 +6,7 @@ function CreateMarket(props) {
         {
             id: 1,
             name: 'Dashboard',
-            path: '/'
+            path: '/dashboard'
         },
         {
             id: 2,
@@ -16,7 +16,7 @@ function CreateMarket(props) {
         {
             id: 3,
             name: 'My Shares',
-            path: '/launch_share'
+            path: '/my_shares'
         },
         {
             id: 4,
@@ -26,7 +26,7 @@ function CreateMarket(props) {
         {
             id: 5,
             name: 'For investors',
-            path: '/for_investors'
+            path: '/for_investor'
         },
     ]
     return (

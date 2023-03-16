@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
-import './MyModels.css';
-function MyModels(props) {
+import './ForBusinesses.css';
+function ForBusinesses(props) {
 
     const invest_card_object = [
         {
@@ -76,10 +76,8 @@ function MyModels(props) {
         },
     ]
 
-    const [isModalOpen, setIsModalOpen] = useState(false);
-    console.log(isModalOpen)
     return (
-        <div id='MyModels'>
+        <div id='ForBusinesses'>
             <div className="page_container">
 
                 {/* card */}
@@ -96,8 +94,8 @@ function MyModels(props) {
 
                                         </div>
                                         <div className="header_balance">
-                                            <small>Balance</small>
-                                            <strong>32 CNFT</strong>
+                                            <small>Total Modal</small>
+                                            <strong>235</strong>
                                         </div>
                                     </div>
                                 </h3>
@@ -105,7 +103,7 @@ function MyModels(props) {
                                 <div className="card_row">
                                     {v.object_list.map(j => {
                                         return (
-                                            <InvestCard setIsModalOpen={setIsModalOpen} key={j.id} j={j}></InvestCard>
+                                            <InvestCard key={j.id} j={j}></InvestCard>
                                         )
                                     })}
 
@@ -120,38 +118,11 @@ function MyModels(props) {
                 </div>
                 {/* card end*/}
             </div>
-
-            {isModalOpen && (
-                <div className="modal_view">
-                    <div className="modal_body">
-                        <button onClick={() => setIsModalOpen(false)} className='close_btn'><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">{/*! Font Awesome Pro 6.3.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2023 Fonticons, Inc. */}<path d="M175 175C184.4 165.7 199.6 165.7 208.1 175L255.1 222.1L303 175C312.4 165.7 327.6 165.7 336.1 175C346.3 184.4 346.3 199.6 336.1 208.1L289.9 255.1L336.1 303C346.3 312.4 346.3 327.6 336.1 336.1C327.6 346.3 312.4 346.3 303 336.1L255.1 289.9L208.1 336.1C199.6 346.3 184.4 346.3 175 336.1C165.7 327.6 165.7 312.4 175 303L222.1 255.1L175 208.1C165.7 199.6 165.7 184.4 175 175V175zM512 256C512 397.4 397.4 512 256 512C114.6 512 0 397.4 0 256C0 114.6 114.6 0 256 0C397.4 0 512 114.6 512 256zM256 48C141.1 48 48 141.1 48 256C48 370.9 141.1 464 256 464C370.9 464 464 370.9 464 256C464 141.1 370.9 48 256 48z" /></svg>
-                        </button>
-                        <div className="flex_row">
-                            <div className="flex_item">
-                                <strong>Transfer</strong>
-                            </div>
-                            <div className="flex_item">
-                                <small>Send to</small>
-                            </div>
-                        </div>
-                        <div className="form_control">
-                            <input type="text" className="form_control_input" />
-                        </div>
-                        <div className="form_control">
-                            <button className="send_btn animate_btn">
-                                Send
-                            </button>
-                        </div>
-                    </div>
-                </div>
-
-            )}
-
         </div>
     );
 }
 
-export default MyModels;
+export default ForBusinesses;
 
 
 const InvestCard = ({ j, setIsModalOpen }) => {
@@ -180,11 +151,9 @@ const InvestCard = ({ j, setIsModalOpen }) => {
             </div>
             <div className="invest_card_footer">
                 <button className="invest_btn animate_btn">
-                    View
+                    In more detail
                 </button>
-                <button onClick={() => setIsModalOpen(true)} className="invest_btn animate_btn">
-                    Transer
-                </button>
+            
             </div>
         </div>
     )
