@@ -1,0 +1,302 @@
+#MyModels {
+    zoom: 75%;
+
+    .page_container {
+        max-width: 1287px;
+        margin: auto;
+        margin-top: 162px;
+
+        @media (max-width: 1000px) {
+            padding-left: 25px;
+            padding-right: 25px;
+            margin-top: 80px;
+        }
+
+        * {
+            color: #fff;
+            font-family: 'Inter', sans-serif;
+            font-weight: bold;
+        }
+
+        ul,
+        ol {
+            margin: 0;
+            padding: 0;
+            list-style: none;
+        }
+
+        .page_header {
+            margin-bottom: 0px;
+            font-size: 53px;
+
+            .counter {
+                font-size: 34px;
+                color: #5F5F5F;
+                vertical-align: bottom;
+                margin-left: 8px;
+
+                @media (max-width: 700px) {
+                    font-size: 20px;
+                }
+            }
+        }
+
+        .page_sub_header {
+            font-size: 34px;
+            margin-bottom: 58px;
+
+            @media (max-width: 700px) {
+                font-size: 25px;
+            }
+
+            .header_row {
+                display: flex;
+                align-items: center;
+                justify-content: space-between;
+
+                .header_balance {
+                    text-align: right;
+
+                    small {
+                        color: #6A6A6A;
+                        font-size: 21px;
+                        display: block;
+                        text-align: right;
+
+                        @media (max-width: 700px) {
+                            font-size: 15px;
+                        }
+                    }
+
+                    strong {
+                        display: block;
+                        text-align: right;
+                        font-size: 29px;
+
+                        @media (max-width: 700px) {
+                            font-size: 18px;
+                        }
+                    }
+                }
+            }
+
+            .counter {
+                font-size: 27px;
+                color: #707070;
+
+            }
+        }
+
+        .card_row {
+            display: flex;
+            flex-flow: row wrap;
+            margin-bottom: 84px;
+
+            // invest card css
+            @media (max-width: 1290px) {
+                justify-content: space-around;
+            }
+
+            .invest_card {
+                background: #343434;
+                border-radius: 5px 5px 4px 4px;
+                margin-bottom: 58px;
+                margin-right: 58px;
+                width: 274px;
+
+                @media (max-width: 1290px) {
+                    margin-right: 0px;
+                }
+
+                &:nth-child(4n) {
+                    margin-right: 0px;
+                }
+
+                .invest_card_header {
+                    border-radius: 5px 5px 0 0;
+                    height: 199px;
+                    background: var(--header-bg);
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    position: relative;
+                    .invest_counter{
+                        display: inline-flex;
+                        justify-content: center;
+                        align-items: center;
+                        color: #fff;
+                        position: absolute;
+                        right: -8px;
+                        top: 8px;
+                        width: 75px;
+                        height: 30px;
+                        font-size: 18px;
+                        background: #27761A;
+
+                    }
+                }
+
+                .invest_card_body {
+                    padding: 17px 23px 13px 28px;
+
+                    li {
+                        .list_h2 {
+                            span {
+                                display: block;
+                                font-size: 23px;
+                                font-weight: normal;
+                            }
+
+                            strong {
+                                font-size: 23px;
+                                font-family: 'Outfit', sans-serif;
+                            }
+                        }
+                        .list_title{
+                            width: 100%;
+                            font-size: 16px;
+                        }
+                        .list_desc{
+                            font-size: 12px;
+                            font-weight: normal;
+                            padding: 0;
+                            margin: 0px;
+                        }
+
+                        .counting_number {
+                            font-size: 23px;
+                            color: rgba(255, 255, 255, 0.5);
+                        }
+
+                        .counter_wrapper {
+                            button {
+                                background: transparent;
+                                border: none;
+                                outline: none;
+                                $s: 24.33px;
+                                width: $s;
+                                height: $s;
+                                border: 1px solid rgba(255, 255, 255, 0.3);
+                                display: inline-flex;
+                                justify-content: center;
+                                align-items: center;
+                                border-radius: 100%;
+                            }
+
+                            .counter_value {
+                                margin: 0px 10px;
+                                display: inline-block;
+                                width: 30px;
+                                text-align: center;
+                            }
+                        }
+                    }
+                }
+
+                .invest_card_footer {
+                    padding: 0 24px;
+                    padding-bottom: 15px;
+                    display: flex;
+                    justify-content: space-between;
+
+                    .invest_btn {
+                        background: #fff;
+                        border: none;
+                        outline: none;
+                        font-size: 15px;
+                        color: #000;
+                        text-align: center;
+                        display: block;
+                        width: 100%;
+                        border-radius: 52px;
+                        padding: 5px;
+                        font-weight: bold;
+
+                        &:first-child {
+                            margin-right: 19px;
+                        }
+                    }
+                }
+            }
+
+            // invest card css end
+        }
+
+    }
+
+    .modal_view {
+        position: fixed;
+        background: rgba(0, 0, 0, 0.8);
+        width: 100%;
+        height: 100%;
+        top: 0;
+        left: 0;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border: solid;
+
+        .modal_body {
+            width: 600px;
+            padding: 30px;
+            border-radius: 5px;
+            background: #1F1F1F;
+            color: #fff;
+            position: relative;
+
+            .close_btn {
+                position: absolute;
+                right: -18px;
+                top: -18px;
+                background: transparent;
+                color: #fff;
+                border: none;
+                outline: none;
+                padding: 5px;
+                border-radius: 100%;
+
+                svg {
+                    width: 30px;
+                    height: 30px;
+                    fill: #fff;
+                }
+            }
+
+            .flex_row {
+                display: flex;
+                align-items: center;
+                justify-content: space-between;
+
+                small {
+                    color: rgba(255, 255, 255, 0.5);
+                }
+
+
+            }
+
+            input {
+                background: #363636;
+                border: none;
+                outline: none;
+                padding: 4px 18px;
+                color: white;
+                margin: 20px auto;
+                width: 100%;
+                display: block;
+            }
+
+            .send_btn {
+                background: #0AA56D;
+                color: #fff;
+                padding: 3px 8px;
+                border-radius: 4px;
+                width: 180px;
+                display: block;
+                margin: auto;
+                margin-top: 15px;
+                border: none;
+                outline: none;
+            }
+        }
+    }
+}

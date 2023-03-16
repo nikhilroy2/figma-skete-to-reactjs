@@ -43,6 +43,10 @@
         <a href="https://figmato-reactjs-converting-pages.netlify.app/signin">https://figmato-reactjs-converting-pages.netlify.app/signin</a>
     </li>
     <li>
-        <a href="https://figmato-reactjs-converting-pages.netlify.app/page_list">https://figmato-reactjs-converting-pages.netlify.app/page_list</a>
+        <a href="https://figmato-reactjs-converting-pages.netlify.app/my_models">https://figmato-reactjs-converting-pages.netlify.app/my_models</a>
+    </li>
+    <li>
+        <a href="https://figmato-reactjs-converting-pages.netlify.app/create_models">https://figmato-reactjs-converting-pages.netlify.app/create_models</a>
     </li>
 </ol>
+

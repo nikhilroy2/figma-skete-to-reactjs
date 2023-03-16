@@ -46,6 +46,12 @@ function PageList(props) {
                     <Link style={{'color': 'white'}} to="/signin">signin</Link>
                 </li>
                 <li>
+                    <Link style={{'color': 'white'}} to="/create_models">Create models</Link>
+                </li>
+                <li>
+                    <Link style={{'color': 'white'}} to="/my_models">My models</Link>
+                </li>
+                <li>
                     <Link style={{'color': 'white'}} to="/page_list">Page list</Link>
                 </li>
             </ol>

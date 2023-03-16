@@ -21,13 +21,15 @@ import MyProjects from './Pages/MyProjects/MyProjects';
 import ProfilePage from './Pages/ProfilePage/ProfilePage';
 import SignIn from './Pages/SignIn/SignIn';
 import PageList from './Pages/PageList/PageList';
+import CreateModels from './Pages/CreateModels/CreateModels';
+import MyModels from './Pages/MyModels/MyModels';
 function App() {
 
   return (
     <div className="App">
       <BrowserRouter>
         <Routes>
-          <Route path="/"  element={<HomePage></HomePage>}></Route>
+          <Route path="/" element={<HomePage></HomePage>}></Route>
         </Routes>
         <Routes>
           <Route path="/page1" element={<Page1></Page1>}></Route>
@@ -65,6 +67,13 @@ function App() {
         <Routes>
           <Route path="/signin" element={<SignIn></SignIn>}></Route>
         </Routes>
+        <Routes>
+          <Route path="/create_models" element={<CreateModels></CreateModels>}></Route>
+        </Routes>
+        <Routes>
+          <Route path="/my_models" element={<MyModels></MyModels>}></Route>
+        </Routes>
+
         <Routes>
           <Route path="/page_list" element={<PageList></PageList>}></Route>
         </Routes>
