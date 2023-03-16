@@ -7,52 +7,37 @@ function PageList(props) {
 
             <ol>
                 <li>
+                    <Link style={{'color': 'white'}} to="/signin">signin</Link>
+                </li>
+                <li>
                     <Link style={{'color': 'white'}} to="/">Homepage</Link>
                 </li>
                 <li>
-                    <Link style={{'color': 'white'}} to="/page1">page1</Link>
+                    <Link style={{'color': 'white'}} to="/create_models">create_models</Link>
                 </li>
                 <li>
-                    <Link style={{'color': 'white'}} to="/opportunities">opportunities</Link>
+                    <Link style={{'color': 'white'}} to="/my_models">my_models</Link>
                 </li>
                 <li>
-                    <Link style={{'color': 'white'}} to="/my_assets">my_assets</Link>
+                    <Link style={{'color': 'white'}} to="/single_model_page">single_model_page</Link>
                 </li>
                 <li>
-                    <Link style={{'color': 'white'}} to="/create_market">create_market</Link>
-                </li>
-                <li>
-                    <Link style={{'color': 'white'}} to="/find_opportunities">find_opportunities</Link>
-                </li>
-                <li>
-                    <Link style={{'color': 'white'}} to="/your_position">your_position</Link>
-                </li>
-                <li>
-                    <Link style={{'color': 'white'}} to="/request_demo">request_demo</Link>
+                    <Link style={{'color': 'white'}} to="/dashboard">dashboard</Link>
                 </li>
                 <li>
                     <Link style={{'color': 'white'}} to="/launch_share">launch_share</Link>
                 </li>
                 <li>
-                    <Link style={{'color': 'white'}} to="/request_data_scientist">request_data_scientist</Link>
+                    <Link style={{'color': 'white'}} to="/for_investor">for_investor</Link>
                 </li>
                 <li>
-                    <Link style={{'color': 'white'}} to="/my_projects">my_projects</Link>
+                    <Link style={{'color': 'white'}} to="/my_shares">my_shares</Link>
                 </li>
                 <li>
-                    <Link style={{'color': 'white'}} to="/profile_page">profile_page</Link>
+                    <Link style={{'color': 'white'}} to="/for_businesses">for_businesses</Link>
                 </li>
                 <li>
-                    <Link style={{'color': 'white'}} to="/signin">signin</Link>
-                </li>
-                <li>
-                    <Link style={{'color': 'white'}} to="/create_models">Create models</Link>
-                </li>
-                <li>
-                    <Link style={{'color': 'white'}} to="/my_models">My models</Link>
-                </li>
-                <li>
-                    <Link style={{'color': 'white'}} to="/page_list">Page list</Link>
+                    <Link style={{'color': 'white'}} to="/page_list">page_list</Link>
                 </li>
             </ol>
         </div>
