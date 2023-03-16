@@ -5,10 +5,6 @@
   max-width: 1287px;
   margin: auto;
   margin-top: 82px;
-  height: 75vh;
-  display: flex;
-  justify-content: center;
-  align-items: center;
 }
 #CreateMarket .page_container * {
   color: #fff;
@@ -20,13 +16,32 @@
   margin: 0;
   padding: 0;
 }
+#CreateMarket .page_container .navbar_list {
+  display: flex;
+  flex-flow: row wrap;
+  list-style: none;
+  margin-bottom: 115px;
+  justify-content: center;
+  align-items: center;
+  margin-top: 36px;
+}
+#CreateMarket .page_container .navbar_list li a {
+  display: inline-block;
+  margin-right: 16px;
+  margin-bottom: 10px;
+  font-size: 15px;
+}
+#CreateMarket .page_container .navbar_list li:last-child a {
+  margin-right: 0px;
+}
 #CreateMarket .page_container .action_wrapper {
   text-align: center;
+  height: 100vh;
 }
 #CreateMarket .page_container .action_wrapper h2 {
   text-align: center;
   font-size: 50px;
-  margin-bottom: 124px;
+  margin-bottom: 136px;
 }
 @media (max-width: 700px) {
   #CreateMarket .page_container .action_wrapper h2 {
